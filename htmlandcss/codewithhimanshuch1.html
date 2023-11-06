@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .container{
+            margin: 20px;
+            border: 2px solid black;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+
+        }
+        header{
+            background-color: aqua;
+            height: 50px;
+            border: 2px solid pink;
+            margin: 10px;
+            text-align: center;
+        }
+        nav{
+            background-color: blueviolet;
+            height: 40px;
+            margin: 10px;
+            border: 2px solid black;
+
+        }
+        main{
+            background-color:gray;
+            height: 65vh;
+            margin: 10px;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: row; */
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+
+
+        
+            
+        }
+        .sec1{
+            width: 150px;
+            height: 300px;
+            margin: 20px;
+            background-color: green;
+            border: 2px solid yellow;
+            
+        }
+        .sec2{
+            background-color: brown;
+            height: 300px;
+            margin: 20px;
+            width: 150px;
+            border: 2px solid;
+            flex-grow: ;
+            
+            
+
+        }
+        footer{
+
+            background-color: chocolate;
+            margin: 10px;
+            border: 2px solid;
+            height: 10vh;
+            text-align: center;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <nav>nav</nav>
+        <main>
+            <section class="sec1">section1</section>
+            <section class="sec2">section2</section>
+        </main>
+        <footer>footer</footer>
+        
+
+    </div>
+</body>
+</html>
