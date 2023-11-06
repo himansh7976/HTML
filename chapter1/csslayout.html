@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css layout</title>
+  <style>
+    .cont{
+      height: 544px;
+      width: 100%;
+      border: 2px solid black;
+      /* flexbox bangya */
+      display: flex;
+      /* flex prperty */
+      /* flex box in box are in coloum form */
+      flex-direction: column;
+      flex-direction: row-reverse;
+      flex-direction: row;
+      /* justify-content: center; */
+      /* space between them */
+
+      /* justify-content: space-between; */
+
+
+      /* flex-direction: column-reverse; */
+      /* flex-flow: row-reverse wrap; */
+     /* align-items: center; */
+         
+    }
+    .item{
+      width: 100px;
+      height: 150px;
+      background-color: blue;
+      border: 2px solid red;
+      margin: 10px;
+      padding: 3px;
+    }
+    #item1{
+      /* flex-grow: 3; */
+      flex-basis: 300px;
+
+     
+    }
+    #item2{
+      
+
+    }
+    #item3{
+      
+
+    }
+
+  </style>
+</head>
+<body>
+  <h1>flex box</h1>
+  <div class="cont">
+   <div class="item" id="item1">first box</div>
+   <div class="item" id="item2">second box</div>
+   <div class="item" id="item3" >thrid box</div>
+   <div class="item" id="item4"> fourth box</div>
+  </div>
+  
+</body>
+</html>
