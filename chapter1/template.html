@@ -24,11 +24,15 @@
 
 
         }
-        .leftnav{}
+        .leftnav a{
+            text-decoration: none;
+
+        }
         #lefty{
             color: black;
             margin: 20px;
             padding: 10px;
+
             
 
         }
@@ -37,6 +41,10 @@
             right: 40px;
             top: 20px;
             display: block;
+
+        }
+        .right_nav a{
+             text-decoration: none;
         }
         .imag{
             display: flex;
@@ -195,7 +203,7 @@ footer{
         <div class="right_nav">
             <a href="#project" id="lefty">Project</a>
             <a href="#About" id="lefty">About</a>
-            <a href="#" id="lefty">contact</a>
+            <a href="#contact" id="lefty">contact</a>
         </div>
     </header>
     <div class="imag">
@@ -210,7 +218,7 @@ footer{
 
     </div>
     <div class="middle contant">
-        <div class="Project">
+        <div class="Project" id="project">
             <h3>projects</h3>
         </div>
         <div class="imgss">
@@ -234,7 +242,7 @@ footer{
                 <!-- <div class="imgname">barn house</div> -->
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="About">
             <h2>About</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quidem odio, molestias dolores magni, rerum minima dolor eveniet et sint recusandae unde nulla. Voluptatibus id temporibus voluptates? Earum sit blanditiis dolore a repellendus necessitatibus autem aliquam nostrum, fugiat fuga iure mollitia quisquam corrupti quidem? Fugit vel sequi possimus reiciendis. Maxime suscipit cumque minima amet ullam magni sit, odio aliquid porro rerum quis repellendus consequatur, molestiae vitae obcaecati excepturi. At dolor iste optio dicta eos eligendi! Non expedita nobis molestias ullam aut. Impedit, atque cumque. Laudantium quasi hic similique, rerum, dolorem deserunt fugiat possimus illo provident in nesciunt nihil quas quis.</p>
             
@@ -278,7 +286,7 @@ footer{
                 </div>
 
         </div>
-        <div class="contact_section">
+        <div class="contact_section" id="contact">
             <p class="lets">Lets get in touch and talk about your next project.</p>
             <h3 class="contactsection">Contact</h3>
             <form action="#" target="_blank" class="from">

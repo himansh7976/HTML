@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    nav{
+        /* border: 2px solid black; */
+        margin: 5px;
+        height: 50px;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        
+
+    }
+    .leftnav {
+        /* border: 2px solid pink; */
+    width: 30%;
+    display: flex;
+    align-items: center;
+    
+    
+
+    }
+    .rightnav{
+        /* border: 2px solid blue; */
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        /* justify-content: space-between; */
+        
+    }
+    .leftnav a{
+        text-decoration: none;
+        color: black;
+    }
+    .rightnav a{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        margin: 5px;
+    }
+    .imgdiv{
+        /* border: 2px solid yellow; */
+        height: 800px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://www.w3schools.com/w3images/architect.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .br{
+        /* background-color: black; */
+        color: wheat;
+        margin-right: 10px;
+        opacity: .8;
+
+
+    }
+    .projects{
+        /* border: 2px solid green; */
+        margin: 5px;
+        height: 10vh;
+
+    }
+    h2{
+        padding-top: 20px;
+
+    }
+    .project_img{
+        height: 55vh;
+        /* border: 2px solid brown; */
+        margin: 5px;
+        width: 95%;
+        padding: 50px;
+        /* margin-left: 40px; */
+        /* background-image: url(https://www.w3schools.com/w3images/house5.jpg); */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    .img1 img {
+        border: 2px solid;
+        /* margin:10px;  */
+        margin-bottom: 50px;
+        /* background-image: url(https://www.w3schools.com/w3images/house5.jpg); */
+        height: 25vh;
+        width:300px;
+        background-size: cover;
+        
+    }
+    h3{
+        position: absolute;
+        background-color: black;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: small;
+        padding: 2px;
+        
+    }
+
+
+
+    .aboutsec{
+        /* border: 2px solid black; */
+        height: 20vh;
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+
+    
+        
+        
+    }
+
+     .contactinfo{
+
+        /* border: 2px solid black; */
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        /* justify-content: space-between; */
+        justify-content: space-evenly;
+        /* align-items: center; */
+        flex-wrap: wrap;
+    }
+    .box1{
+        /* border: 2px solid red; */
+        width: 300px;
+        height: 60vh;
+        
+    }
+    .box1 img{
+        width: 300px;
+    }
+
+    .ceo{
+        color: gray;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   ;
+        margin: 10px;
+        /* border: 2px solid black; */
+        height: 5vh;
+    }
+    .button{
+        background-color: aliceblue;
+        margin: 10;
+        width: 100%;
+        height: 5vh;
+        border: 2px solid black;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .contactsec{
+        margin: 10px;
+        /* border: 2px solid black; */
+        height: 60vh;
+        width: 98%;
+        flex-wrap: nowrap;
+        /* display: flex; */
+
+    }
+
+    .contact {
+        margin: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    form{
+        /* border: 2px solid pink; */
+        height: 50vh;
+
+
+    }
+    .input{
+        margin: 10px;
+        width: 100%;
+        height: 40px;
+
+    }
+    #but{
+        width: 9%;
+        height: 5vh;
+        text-align: center;
+        color: bisque;
+        margin: 8px;
+        background-color: black;
+    }
+    footer{
+        height: 10vh;
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+    }
+
+ 
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="leftnav">
+            <a href=""><b>BR architects</b></a>
+
+        </div>
+        <div class="rightnav">
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    
+    </nav>
+
+    <!-- imgdiv -->
+
+    <div class="imgdiv">
+        <h1 class="br">BR</h1>
+        <h1>architects</h1>
+
+        
+    </div>
+    <!-- projects -->
+    <div class="projects">
+        <h2>project</h2>
+    </div>
+    
+    <!-- projectsimgs -->
+    <div class="project_img">
+        <div class="img1">
+            
+            <h3 class="Summer">Summer house</h3>
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+             
+
+        </div>
+        <!-- 2imgeadd -->
+        <div class="img1">
+            <h3 class="Summer">Brick house</h3>
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+        </div>
+
+        <!-- img3 -->
+        <div class="img1">
+            <h3 class="Summer">Renovated</h3>
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+        </div>
+
+        <!-- img4 -->
+        <div class="img1">
+            <h3 class="Summer">Barn house</h3>
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+        </div>
+        <!-- img5 -->
+        <div class="img1">
+            <h3 class="summer">Summer House</h3>
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+
+         </div>
+         <div class="img1">
+            <h3 class="summer">Brick House</h3>
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+         </div>
+         <!-- img6 -->
+         <div class="img1">
+            <h3 class="summer">removated</h3>
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+         </div>
+         <div class="img1">
+            <h3 class="summer">Barn House</h3>
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+         </div>
+    </div>
+
+    <!-- about/section -->
+    <div class="aboutsec">
+        <div class="about">
+       <h1>about</h1>
+       <p class="pra">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, aperiam omnis alias illum consequuntur fuga expedita dolores aliquid laborum unde repellat. Aspernatur odit corporis modi dolorem cum, fuga aliquid esse nisi quae at exercitationem? Omnis, assumenda. Accusamus totam recusandae eaque facere praesentium veniam minus possimus, neque ipsa nobis sed et?</p>
+        </div>
+         <!-- div contct info -->
+      
+            
+         
+
+        
+  
+    </div>
+
+    <!-- contact infoformatin -->
+
+     <div class="contactinfo">
+        <div class="box1">
+            <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+            <h2>john Don</h2>
+            <p class="ceo">CEO & Founder</p>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. In facere culpa sint deserunt ut similique natus ipsa eveniet est corrupti.</p>
+           <button class="button">Contact</button>
+            
+
+
+        </div>
+         <!-- box2 -->
+
+
+         <div class="box1">
+            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+
+            <h2>john Don</h2>
+            <p class="ceo">CEO & Founder</p>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. In facere culpa sint deserunt ut similique natus ipsa eveniet est corrupti.</p>
+           <button class="button">Contact</button>
+            
+            
+
+         </div>
+
+         <!-- box3 -->
+         <div class="box1">
+            <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+
+            <h2>john Don</h2>
+            <p class="ceo">CEO & Founder</p>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. In facere culpa sint deserunt ut similique natus ipsa eveniet est corrupti.</p>
+           <button class="button">Contact</button>
+
+
+         </div>
+
+         <!-- box4 -->
+         <div class="box1">
+            <img src="https://www.w3schools.com/w3images/team4.jpg" alt="">
+
+
+            <h2>john Don</h2>
+            <p class="ceo">CEO & Founder</p>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. In facere culpa sint deserunt ut similique natus ipsa eveniet est corrupti.</p>
+           <button class="button">Contact</button>
+
+
+         </div>
+     </div>
+     <div class="contactsec">
+        <h1 class="contact">Contact</h1>
+        <p> Lets get in touch and talk about your next project.
+        </p>
+        <form action="">
+            <input type="text" placeholder=" name " class="input"> <br>
+            <input type="email" placeholder="email" class="input"><br>
+            <input type="text" name="" id="" placeholder="Subject" class="input"> <br>
+            <input type="text" name="" id="" placeholder="Comment" class="input"> <br>
+            <input type="subit" value="SEND  MESSAGE" id="but" class="">
+
+    </form>
+
+
+     </div>
+     <!-- location img -->
+     <div class="loctionimg">
+
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+
+     </div>
+     <footer>
+        <p>Powered by w3schools</p>
+     </footer>
+
+
+</body>
+</html>
