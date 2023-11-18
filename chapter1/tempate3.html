@@ -10,7 +10,7 @@
             padding: 0px;
         }
         body{
-            background-color: yellowgreen; 
+            background-color: white; 
             ;
         }
         nav{
@@ -42,29 +42,41 @@
         }
         .rightbox{
             /* margin-top: px; */
-            border: 2px solid brown;
-            height: 80vh;
-            width: 35vh;
+            border: 2px solid brown;/
+            height: 80%;
+            width: 40vh;
             margin: 10px; 
+            
               }
         .rightbox1{
-            border: 2px solid yellow;
+            /* border: 2px solid yellow; */
             height: 30vh;
+            box-shadow: 0px 0px 5px 5px  gray;
         }
         .rightbox2{
-            border: 2px solid rgb(14, 14, 14);
+            /* border: 2px solid rgb(14, 14, 14); */
+            margin: 3px;
             height: 20vh;
-            margin-top: 10px;
+            width: 20vw;
+            margin-top: 20px;
+            box-shadow: 0px 0px 5px 5px gray;
 
             
 
         }
 
         .rightbox3{
-            border: 2px solid purple;
-            height: 10vh;
-            margin: ;
+            padding: 20px;
+            /* margin: 10px; */
+            /* border: 2px solid purple; */
+            height: 40vh;
+            margin-top: 20px;
+            box-shadow: 0px 5px 5px 0px gray;
             flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            /* justify-content: space-between; */
         }
         .middlecontainer{
             border: 2px solid green;
@@ -83,10 +95,46 @@
             margin: 20px;
         }
         footer{
-            border: 2px solid yellowgreen;
+            border: 2px solid rgb(77, 106, 19);
             height: 10vh;
             flex-wrap: wrap;
         }
+        .firstimg {
+                text-align: center;
+            
+        }
+        .firstimg img{
+            height: 15vh;
+            border-radius: 50px 50px 50px 50px;
+        }
+        .righticon{
+            margin: 5px;
+        }
+        .firstbutton{
+            font-size: 20px;
+            border:2px solid black;
+            background-color: rgb(149, 146, 146);
+            color: white;
+            width: 20vw;
+            height: 7vh;
+            /* margin-top: 10px; */
+        }
+        .img1{
+            height: 10vh;
+        }
+        
+        .rightbox4{
+            border: 2px solid black;
+            height: 15vh;
+            margin-top: 10px;
+        }
+        .hobby{
+            border: 2px solid gray;
+            background-color: rgb(71, 68, 68);
+            color: white;
+        }
+      
+      
     </style>
 
 </head>
@@ -100,10 +148,72 @@
     <div class="maincontainer">
         <!-- right div -->
         <div class="rightbox">
-            <div class="rightbox1"></div>
-            <div class="rightbox2"></div>
-            <div class="rightbox3"></div>
-            <div class="rightbox4"></div>
+            <div class="rightbox1">
+                <h3 class="firstimg">My profile  </h3>
+               <div class="firstimg">
+                <img src="https://www.w3schools.com/w3images/avatar3.png" alt="">
+               </div>
+               <hr>
+               <p class="righticon">
+                Designer, UI
+               </p>
+               <p class="righticon">
+                London, UK
+               </p>
+               <p class="righticon">
+                April 1, 1988
+               </p>
+
+              
+            </div>
+            <div class="rightbox2">
+                <button class="firstbutton">My Groups</button>
+                <button class="firstbutton">My Events</button>
+                <button class="firstbutton">My Photos</button>
+            </div>
+
+            <div class="rightbox3">
+            <br>
+            <div class="img1">
+                <img src="https://www.w3schools.com/w3images/lights.jpg" alt="" class="img1">
+            </div>
+            <div class="img1">
+                <img src="https://www.w3schools.com/w3images/nature.jpg" alt="" class="img1">
+            </div>
+            <div class="img1">
+                <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="" class="img1">
+
+            </div>
+            <div class="img1">
+                <img src="https://www.w3schools.com/w3images/nature.jpg" alt="" class="img1">
+            </div>
+            <div class="img1">
+                <img src="https://www.w3schools.com/w3images/nature.jpg" alt="" class="img1">
+            </div>
+            <div class="img1"> 
+                <img src="https://www.w3schools.com/w3images/snow.jpg" alt="" class="img1">
+            </div>
+
+            </div>
+
+
+            <div class="rightbox4">
+                <p class="interst">My Interst</p>
+                <p class="">
+                    <span class="hobby">News</span>
+                    <span class="hobby">W3school</span>
+                    
+                    <span class="hobby">Lables</span>
+
+                    <span class="hobby">Games </span>
+
+                    <span class="hobby">Friends</span>
+                    <span class="hobby">Photos</span>
+                    <span class="hobby">Degins</span>
+                    <span class="hobby">Photography</span>
+                </p>
+
+            </div>
 
         </div>
         <div class="middlecontainer">
