@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        .box{
+            background-color: black;
+            height: 250px;
+            width: 250px;
+            border: 2px solid white;
+            animation-name: box;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-in-out;
+            position: absolute;
+        }
+        /* .box_1{
+            height: 250px;
+            width: 250px;
+            background-color: brown;
+            border: 2px solid black;
+
+            animation-name: box_1;
+            animation-duration: 10s;
+            animation-iteration-count: 3;
+            position: absolute;
+
+        } */
+        @keyframes box{
+            /* from{
+                left: 25%;
+                background-color: palevioletred;
+                
+            }
+            to{
+                top: 25%;
+                background-color: brown;
+            } */
+        0%{
+            left: 0;
+            background-color: pink;
+
+          /* left: 25%;
+          top: 25%;
+          background-color: palevioletred; */
+
+
+
+        }
+        10%{
+            left: 250px;
+            background-color: black;
+            /* top: 50%;
+            background-color: blue;
+            /* bottom: 20px;
+            /* top: 10px; */
+            /* background-color: brown; */ */ */
+
+        }
+        20%{
+            top: 250px;
+            background-color:white;
+            /* top: 25%; */
+                        /* right: 500px;
+            top: 400px; */
+
+        }
+        /* 75%{ top: 200px; */
+           
+        }
+        50%{
+        
+            top: 100;
+
+        }
+        /* }
+        @keyframes box_1{
+            0%{
+                right: 50%;
+            bottom: 50%;                
+
+            }
+            20%{
+                left: 0;
+                top: 0;
+                background-color: black;
+            }
+            50%{
+                right: 50px;
+                bottom: 100%;
+                background-color: blueviolet;
+            }
+            75%{
+                top: 0;
+                left: 0;
+            }
+            100%{
+                top: 50%;
+                bottom: 50px;
+            }
+             */
+            
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box_1"></div>
+    
+    
+</body>
+</html>
