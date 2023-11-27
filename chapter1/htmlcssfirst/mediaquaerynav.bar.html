@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        nav {
+            text-align: center;
+            width: 100vw;
+            height: 100px;
+            background-color: aquamarine;
+        }
+
+        .navi {
+            
+            margin: 10px;
+            display: inline;
+            text-align: center;
+            
+        }
+        #bar{
+            position: absolute;
+            left: 90%;
+
+           
+
+        }
+        @media (max-width:600px) {
+            body{
+                background-color: blue;
+            }
+
+            
+        }
+        @media (max-width:800px) {
+            ul{
+                display: none;
+
+            
+
+
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="navi">home</li>
+            <li class="navi">About</li>
+            <li class="navi">Menu</li>
+            <li class="navi">Chefs</li>
+        </ul>
+
+        <i class="fa-solid fa-bars"  id="bar"></i> 
+
+    </nav>
+
+
+
+</body>
+
+</html>
