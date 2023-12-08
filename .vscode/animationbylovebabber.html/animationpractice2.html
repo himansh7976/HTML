@@ -148,8 +148,38 @@
 
                 
             }
-            {
+          
             
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            border: 3px solid black;
+            position: absolute;
+            animation: boxy 5s ease-in-out none infinite alternate ;
+        }
+        @keyframes boxy {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            10%{
+                top: 50%;
+                left: 0%;
+            }
+            20%{
+                top: 50%;
+                left: 50%;
+
+            }
+            30%{
+                left: 50%;
+                top: 0%;
+            }
+            40%{
+                top: 0%;
+                left: 0%;
             }
             
         }
@@ -163,6 +193,7 @@
     </div>
     <div class="ball2"></div>
     <div class="ball3"></div>
+    <div class="box"></div>
 
 </body>
 

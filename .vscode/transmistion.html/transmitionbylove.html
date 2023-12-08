@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:200px;
+            width: 200px;
+            background-color: blue;
+            transition-property: width;
+            transition-duration: 4s;
+            /* transition-delay: 1s; */
+            transition-timing-function: linear;
+        }
+        .box2{
+          height: 50px;
+          width: 100px;
+          background-color: brown;
+          border: 2px solid black; 
+          position: relative;
+          top: 30%; 
+          left: 30%;
+          overflow: hidden;
+          transition-property: height;
+          transition-duration: 2s;
+          transition-timing-function: linear;
+         
+
+        }
+        .box2:hover{
+            height: 200px;
+        }
+        /* .box:hover{
+            width: 1200px;
+            background-color: black;
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box2">dfs</div>
+    </div>
+    
+</body>
+</html>

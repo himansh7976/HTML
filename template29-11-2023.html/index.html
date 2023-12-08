@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        header {
+            /* background-color: blueviolet; */
+            height: 15vh;
+            /* position: fixed; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+
+        }
+
+        #bar {
+            position: relative;
+            left: 95%;
+            top: 33px;
+        }
+
+        .nav-img {
+
+            width: 20%;
+            /* border: 2px solid black; */
+        }
+
+
+        /* media queery */
+
+        @media (max-width:1000px) {
+            .rightnav {
+                display: none;
+            }
+
+        }
+
+        .rightnav {
+            /* border: 2px solid; */
+            width: 40%;
+            /* border: 2px solid black; */
+        }
+
+        ul {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+
+
+        ul li {
+
+            list-style: none;
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 10px 0px;
+        }
+
+
+
+
+
+        /* home color redd */
+        #homecolor {
+            color: rgb(207, 20, 20);
+        }
+
+
+        .menufeacter {
+            border-radius: 10px 10px 10px 10px;
+            height: 100px;
+            width: 85px;
+            /* border: 2px solid; */
+            background-color: white;
+            display: none;
+            position: absolute;
+            top: 70px;
+
+        }
+
+        #fec:hover .menufeacter {
+            display: block;
+
+
+        }
+
+        /* hearder area end */
+
+        /* main bar area start */
+
+        .container-box {
+            margin: 2px;
+
+            height: fit-content;
+            width: 100%;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+
+
+        }
+
+        .img-box1 {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            /* margin: 4px; */
+            height: 68vh;
+            width: 40%;
+            /* border: 2px solid; */
+            background-color: pink;
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/top-left-bg.jpg);
+            /* background-repeat: no-repeat;
+            background-size: cover; */
+
+
+
+            min-width: 30%;
+
+
+
+        }
+
+        .img-box2 {
+            /* margin: 4px; */
+            height: 68vh;
+            width: 60%;
+            /* border: 3px solid yellow; */
+
+
+
+
+            /* min-width: 900px; */
+
+        }
+
+        .restroimg {
+
+            height: 68vh;
+            width: 100%;
+        }
+
+        .inner-conatiner {
+
+            /* font-family: 'Dancing Script', cursive;
+            font-size: 20px; */
+            height: 150px;
+            width: 200px;
+            /* border: 2px solid; */
+            position: absolute;
+            top: 40%;
+            /* left: 5%; */
+
+            max-width: 1200px;
+            /* min-width:900px; */
+
+        }
+
+        .inner-conatiner h4 {
+            margin: 10px;
+            font-size: 30px;
+            color: antiquewhite;
+        }
+
+        .inner-conatiner h6 {
+            margin: 10px;
+            padding: 5px;
+            color: antiquewhite;
+
+        }
+
+        .make-button {
+
+            margin: 10px;
+            height: 40px;
+            width: 150px;
+            /* border: 2px solid; */
+            background-color: antiquewhite;
+        }
+
+
+
+        @media (max-width:900px) {
+            .img-box1 {
+                min-width: 100%;
+            }
+
+            .img-box2 {
+                min-width: 100%;
+            }
+        }
+
+
+
+        #butt {
+            margin: 8px;
+            text-decoration: none;
+            color: rgb(219, 68, 41);
+        }
+
+        #tempp {
+            text-decoration: none;
+            color: rgb(102, 237, 192);
+            font-weight: 100;
+        }
+
+
+        /* about area start */
+
+
+        .container-about {
+            /* border: 2px solid yellowgreen; */
+            margin-top: 20px;
+            /* padding: 100px 0px 0px 0px; */
+            height: 100vh;
+            width: 100%;
+            /* border: 2px solid brown; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .container-box2 {
+
+
+            height: 80%;
+            width: 80%;
+            /* border: 2px solid yellow; */
+            /* position: relative; */
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .aboutbox1 {
+            margin: 5px;
+            height: 99%;
+            width: 50%;
+            position: relative;
+            /* border: 2px solid black; */
+
+
+        }
+
+        .aboutbox2 {
+            margin: 2px;
+            height: 99%;
+            width: 50%;
+            /* border: 2px solid brown; */
+
+        }
+
+
+
+        .aboutbox2 img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .about-heading h6 {
+            font-size: 15px;
+            color: rgb(157, 59, 59);
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            padding-left: 40px;
+        }
+
+        .about-heading h2 {
+            /* border: 2px solid; */
+            /* margin: 50px; */
+            margin-bottom: 20px;
+
+            line-height: 30px;
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: 900px;
+        }
+
+
+        .para p {
+            /* border: 2px solid; */
+            font-size: 20px;
+            color: rgb(96, 90, 90);
+        }
+
+
+        .row-imgg {
+            height: 25vh;
+
+
+            /* border: 2px  solid brown; */
+            display: flex;
+            margin-top: 60px;
+            justify-content: space-around;
+
+
+        }
+
+        .row-img img {
+            width: 100%;
+            height: 500px%;
+        }
+
+
+        @media (max-width:1000px) {
+            .container-box2 {
+                height: fit-content;
+
+            }
+
+            .container-about {
+                height: fit-content;
+            }
+
+
+
+
+
+
+
+        }
+
+        @media (max-width:700px) {
+            .aboutbox1 {
+                min-width: 100%;
+
+            }
+
+
+
+
+        }
+
+        /* menu start area  */
+        /* animation add  */
+
+
+        /* cards area start */
+
+        .menucard-section {
+            height: 800px;
+            width: 100%;
+            border: 2px solid blueviolet;
+            /* margin-top: 90px; */
+            padding-top: 80px;
+            padding-bottom: px;
+        }
+
+        .menu-card-cont {
+            height: 150px;
+            width: 50%;
+            /* border: 2px solid black; */
+            /* padding-right: 15px;
+            padding-left: 15px; */
+            /* padding: 120px 120px; */
+            margin-right: auto;
+            margin-left: 30%;
+            display: flex;
+            /* justify-content: center; */
+
+
+
+        }
+
+        div {
+            display: block
+        }
+
+        .menu-heading {
+            padding-right: ;
+            border: 2px solid;
+            width: 250px;
+
+
+        }
+
+        .menu-heading h6 {
+
+            font-size: 15px;
+            color: #fb5849;
+            font-weight: 100;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            /* padding-left: px; */
+            align-items: center;
+        }
+
+
+
+        .menu-heading h2 {
+
+            line-height: 40px;
+            /* margin-top: px; */
+            /* margin-bottom: 25px; */
+            font-size: 25px;
+            font-weight: 900px;
+            color: #2a2a2a;
+        }
+
+        @media (max-width:684px) {
+            h2 {
+                height: fit-content;
+                font-size: 10px;
+            }
+
+        }
+
+
+        .menu-card {
+            margin: 5px;
+            height: 400px;
+            width: 100%;
+            border: 2px solid;
+            /* margin-top: 50px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+
+
+        }
+
+
+        .card-menu {
+            height: 40vh;
+            width: 18%;
+            border: 2px solid green;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media (max-width:700px) {
+            .card-menu {
+                width: 60%;
+                margin-top: 10px;
+                background-repeat: no-repeat;
+                /* background-size: 71vh 32vh; */
+                background-size: cover;
+            }
+
+            .menu-card {
+                height: fit-content;
+                justify-content: center;
+
+
+            }
+
+            .menucard-section {
+                height: fit-content;
+            }
+
+        }
+
+
+        /* imges area */
+        #first-menu-img {
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-04.jpg);
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+
+        }
+
+        #second-menu-img {
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-03.jpg);
+        }
+
+        #thrid-img {
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-05.jpg);
+        }
+
+        #fouth-img {
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-01.jpg);
+        }
+
+        #fift-img {
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-02.jpg);
+        }
+
+        .mini-div1 {
+            height: 60px;
+            width: 60px;
+            background-color: #fb5849;
+            padding: 8px;
+        }
+
+        .mini-div1 h6 {
+            align-items: center;
+            color: aliceblue;
+            font-size: 30px;
+        }
+
+        /* -------------menu card end-------- */
+
+
+        /* --------chef info start------ */
+        /* animation is panding */
+        .chef-sec {
+            padding-top: 120px;
+            height: 650px;
+            width: 100%;
+            border: 2px solid;
+            margin-top: 50px;
+
+        }
+
+        .chef-mini-div {
+
+            height: 500px;
+            width: 100%;
+            border: 2px solid;
+
+
+
+
+
+
+        }
+
+        .chef-mini-div h6 {
+            color: #fb5849;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .chef-info {
+            text-align: center;
+            font-size: 20px;
+            height: 150px;
+            width: 100%;
+            /* border: 2px solid; */
+            padding-left: 150px;
+            padding-right: 100px;
+            padding-top: 10px;
+            /* min-width: 1200px; */
+            max-width: 1200px;
+            /* border: 2px solid; */
+            /* margin-right: px; */
+        }
+
+
+        @media(max-width:1400px) {
+            .chef-info h2 {
+                font-size: 15px;
+            }
+
+            .chef-info h6 {
+                font-size: 10px;
+            }
+        }
+
+        .chef-img {
+            margin: 5px;
+            height: 325px;
+            width: 75%;
+            border: 2px solid yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            margin-left: 100px;
+            margin-right: 75px;
+            /* flex-wrap: wrap; */
+
+        }
+
+        @media (max-width:500px) {
+            .chef-img {
+                width: 60%;
+                height: fit-content;
+
+
+            }
+
+        }
+
+        .chef-img-1 {
+            height: 300px;
+            width: 30%;
+            /* border: 2px solid; */
+        }
+
+        .chef-img-1 img {
+            height: 250px;
+            width: 100%;
+            /* cursor: pointer; */
+
+        }
+
+        .chef-img- img :hover {
+            z-index: -1;
+            opacity: 0.4;
+
+        }
+
+        .chef-img-1-info {
+            text-align: center;
+            /* padding-left: 65px;
+            padding-top: 5px; */
+            background-color: aliceblue;
+            color: black;
+            box-sizing: border-box;
+
+        }
+
+        .chef-img-2 {
+            height: 300px;
+            width: 30%;
+            /* border: 2px solid blue; */
+            /* padding-left: 10px;
+            padding-right: 10px;     */
+            background-color: black;
+            color: aliceblue;
+            border: 4px solid gray;
+            /* min-width: 20%%; */
+        }
+
+        @media (max-width:550) {
+            .chef-img-2 {
+
+                min-width: 30%;
+            }
+
+        }
+
+        .chef-img-2 img {
+            height: 250px;
+            width: 100%;
+            /* background-color: black; */
+            transition: all;
+            transition-duration: 0.20s;
+            transition-timing-function: ease-in-out;
+            /* background-color: black; */
+        }
+
+        .chef-img-2 img:hover {
+            /* z-index: -1; */
+            opacity: 0.1;
+        }
+
+        .chef-img-two {
+            height: 300px;
+            width: 30%;
+            border: 2px solid peru;
+
+        }
+
+        .chef-img-info-3 {
+            text-align: center;
+            background-color: aliceblue;
+
+            color: black;
+        }
+
+        @media (max-width:700px) {
+            .chef-img-2 {
+                height: fit-content;
+                /* width: 20%;   */
+                /* min-width: 20%; */
+
+            }
+
+        }
+
+        @media (max-width:400px) {
+            #mediaji {
+                /* height: fit-content; */
+            }
+
+
+        }
+
+        /* animation is panding */
+
+        /* chef info is :end */
+        .contact-sec {
+            background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/reservation-bg.jpg);
+            height: 95vh;
+            width: 100%;
+            /* margin-top: 100px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+
+        }
+
+        .conatiner-contact {
+            height: 60vh;
+            width: 80%;
+            /* border: 2px solid brown; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+
+
+
+
+
+
+
+        }
+
+        .row-1 {
+            height: 60vh;
+            width: 45%;
+            /* border: 2px solid black; */
+        }
+
+        .roji {
+            height: 55vh;
+            width: 45%;
+        }
+
+        .about-heading h6::before{
+
+            content: "";
+            border: 1px solid red;
+            position: absolute;
+            width: 6%;
+            left: 0px;
+            top: 8px;
+
+            
+        }
+
+
+
+
+        .heading-contact {
+            /* border: 2px solid sandybrown; */
+            margin: 5px;
+            margin-bottom: 10px;
+            color: aliceblue;
+            font-size: 15px;
+        }
+
+        .heading-contact h6 {
+            font-size: 15px;
+        }
+
+        #para {
+            color: aliceblue;
+            margin: 5px;
+            font-size: smaller;
+        }
+
+        .mini-row {
+            height: 25vh;
+            width: 100%;
+            /* border: 2px solid peru; */
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        @media (max-width:1200px) {
+            #para {
+                font-size: 7px;
+            }
+
+            .heading-contact h6 {
+                font-size: 8PX;
+            }
+
+
+
+
+        }
+
+        .mini-cont {
+            height: 20vh;
+            width: 45%;
+            /* border: 2px solid palevioletred; */
+            background-color: aliceblue;
+            position: relative;
+        }
+
+
+        .logo h6 {
+            font-size: 20px;
+        
+
+        }
+
+        .logo {
+            font-size: 15px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+
+        .logo i {
+            background-color: #fb5849;
+            font-size: 30px;
+            padding: 10px;
+            color: aliceblue;
+            border-radius: 50%;
+            /* position: absolute; */
+
+            bottom: 23px;
+
+
+
+        }
+
+        @media (max-width:600px) {
+            .logo i {
+                font-size: 7px;
+                height: fit-content;
+
+
+            }
+
+            .logo h6 {
+                font-size: 10px;
+            }
+
+        }
+
+        .num a {
+            font-size: 15px;
+            text-decoration: none;
+            color: black;
+
+
+        }
+
+        @media (max-width:900px) {
+            .num a {
+                font-size: 6px;
+            }
+        }
+
+        /* tag for sir */
+        .tag {
+            position: relative;
+            bottom: 20px;
+           
+        }
+
+
+        /* end krna hisajdiafss */
+        /* roww 2 */
+        .roww {
+            background-color: white;
+            margin-left: 30px;
+            padding: 5px;
+            text-align: center;
+            font-size: 25px;
+            /* border: 2px solid black; */
+        }
+
+        .roww h4 {
+            /* border: 2px solid black; */
+
+        }
+
+        .inputtag {
+            margin-top: 2vh;
+            height: 20vh;
+            width: 100%;
+            /* border: 2px solid yellow; */
+            display: flex;
+            flex-wrap: wrap;
+
+
+
+
+
+        }
+
+
+
+
+
+        .input-2 {
+            height: 20vh;
+            width: 50%;
+            /* border: 2px solid ; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+
+        }
+
+        .input-2 input {
+            height: 5vh;
+            width: 80%;
+            border-radius: 2px 2px 2px 2px;
+            padding-left: 2vh;
+            margin-top: 5px;
+
+
+        }
+
+        ::placeholder {
+            color: #000;
+            /* font-weight: -50; */
+        }
+
+
+        @media (max-width:600px) {
+
+            .table {
+                height: fit-content;
+            }
+
+            .table h4 {
+                font-size: 10px;
+            }
+
+            .input-2 {
+                height: fit-content;
+                min-width: 100%;
+
+            }
+
+            .inputtag {
+                height: fit-content;
+            }
+
+            ::placeholder {
+                font-size: 8px;
+            }
+
+            #mms {
+                width: 30vw;
+                height: 10vh;
+
+            }
+
+            .mini-cont {
+                min-width: 100%;
+                height: 15vh;
+            }
+
+            .mini-row {
+                height: fit-content;
+            }
+
+
+
+        }
+
+        .mssg textarea {
+            margin: 5px;
+            height: 25vh;
+            width: 30vw;
+        }
+
+
+        /* icon and media query of 1 block */
+
+        /* contact area end  */
+
+        .meal-area {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            margin-top: 10px;
+            height: 100vh;
+            width: 100%;
+            border: 2px solid;
+        }
+
+        .meal-cont {
+            margin: auto;
+            height: 90vh;
+            width: 80%;
+            border: 2px solid black;
+
+
+        }
+
+        .meal-heading {
+            height: 10vh;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .meal-heading h6 {
+            color: #fb5849;
+            font-size: 15px;
+        }
+
+        .meal-heading h2 {
+            margin-top: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+
+
+        }
+
+        .mix {
+            height: 70vh;
+            width: 100%;
+            border: 2px solid;
+
+        }
+
+        .mini-icon {
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+        }
+
+        .first-icon img {
+            margin-top: 20px;
+            border: 2px solid;
+            height: 5vh;
+        }
+
+        .meal-book {
+            margin-top: 10  px;
+            height: 55vh;
+            width: 100%;
+            border: 2px solid;
+            display: flex;
+        }
+
+        .meal-book1 {
+            height: 55vh;
+            width: 50%;
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+
+        .food-list {
+            height: 15vh;
+            width: 100%;
+            border: 2px solid;
+            /* position: relative; */
+            /* position: absolute ; */
+            position: relative;
+            /* top: 10px; */
+            display: flex;
+            
+
+
+
+        }
+
+          
+
+
+         .food-list img {
+            height: 100%;
+        } 
+
+        .meal-para {
+
+            border: 2px solid pink;
+            padding-left: 10px;
+            width: 70%;
+            font-size: 15px;
+        }
+
+        .meal-para p {
+            margin-top: 20px;
+
+        }
+
+        .price {
+            height: 100%;
+            width: 30%;
+            background-color: #fb5849;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+
+        }
+
+        .price h6 {
+            font-size: 25px;
+            padding: 5px;
+        }
+
+     
+
+        /* footer start  */
+/* 
+        footer{
+            margin: 15px;
+            height: 15vh;
+            width: 99%;
+            background-color: #fb5849;
+            padding-left: 10%;
+        }
+
+        .conatiner{
+            height: 15vh;
+            width: 90%;
+            border: 2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between  ;
+
+           
+
+
+        }
+        .mini-div{
+            height: 10vh;
+            width: 30%;
+            border: 2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content:space-evenly;
+
+        }
+        .iconn{
+            border: 2px solid;
+            background-color: aliceblue;
+            color:#fb5849;
+            width: 15%;
+            height: 7vh;
+            /* padding: 8px; */
+            border-radius: 50%;
+            text-align: center;
+
+
+
+        } */
+
+      
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="nav-img">
+            <img src="https://themewagon.github.io/klassy-cafe/assets/images/klassy-logo.png" alt="" id="imgg">
+        </div>
+
+
+        <!-- right navbarr -->
+        <div class="rightnav">
+            <ul>
+                <li id="homecolor">Home</li>
+                <li class="rightbar">About</li>
+                <li class="rightbar">Menu</li>
+                <li class="rightbar">Chefs</li>
+                <li id="fec">Features
+                    <div class="menufeacter">
+                        <div>Feacther1</div>
+                        <div>Feacther2</div>
+                        <div>Feacther3</div>
+                        <div>Feacther4</div>
+                    </div>
+                <li class="rightbar">ContactUs</li>
+                </li>
+                <li class="rightbat"></li>
+            </ul>
+            <!-- <i class="fa-solid fa-bars"  id="bar"></i> -->
+
+
+        </div>
+
+
+
+    </header>
+
+
+
+    <!-- ------------------header area end--------------- -->
+
+
+    <!-- ============main bar start start================ -->
+    <div class="container-box">
+
+
+        <!-- rightt box -->
+
+        <div class="img-box1">
+            <div class="inner-conatiner">
+                <h4>Klassy Cafe</h4>
+                <h6>THE BEST EXPERIENCE</h6>
+                <div class="make-button">
+                    <a id="butt" href="#">Make A Reservation </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- left box -->
+
+        <div class="img-box2">
+            <div class="restoimg">
+                <img src="https://themewagon.github.io/klassy-cafe/assets/images/slide-03.jpg" alt="restro img"
+                    class="restroimg">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- main area end   -->
+
+
+    <!-- about area start   -->
+
+    <div class="container-about">
+        <div class="container-box2">
+            <div class="aboutbox1">
+                <div class="about-heading">
+                    <h6>
+                    About Us
+                    </h6>
+                    <h2>
+                        We Leave A Delicious <br> Memory For You
+                    </h2>
+                    <div class="para">
+                        <p>Klassy Cafe is one of the best
+                            <a href="https://templatemo.com/tag/restaurant" id="tempp">restaurant HTML templates</a>
+                            with Bootstrap v4.5.2 CSS framework. You can download and feel free to use this website
+                            template layout for your restaurant business. You are allowed to use this template for
+                            commercial purposes.
+                            <br>
+                            <br>
+                            You are NOT allowed to redistribute the template ZIP file on any template donwnload website.
+                            Please contact us for more information.
+                        </p>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="row-imgg">
+                    <div class="row-img">
+                        <img src="https://themewagon.github.io/klassy-cafe/assets/images/about-thumb-01.jpg" alt="bowl">
+                    </div>
+                    <div class="row-img">
+                        <img src="https://themewagon.github.io/klassy-cafe/assets/images/about-thumb-02.jpg" alt="">
+                    </div>
+                    <div class="row-img">
+                        <img src="https://themewagon.github.io/klassy-cafe/assets/images/about-thumb-03.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- about img 2 start now -->
+
+
+
+
+            <div class="aboutbox2">
+                <img src="https://themewagon.github.io/klassy-cafe/assets/images/about-video-bg.jpg" alt="">
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- about area end -->
+
+    <!-- menu area start  -->
+    <section class="menucard-section">
+        <div class="menu-card-cont">
+            <!-- heading of menu card -->
+            <div class="menu-heading">
+                <h6>
+                    ---OUR Menu
+                </h6>
+                <h2>Our selection of cakes with quality taste</h2>
+
+            </div>
+
+        </div>
+
+        <!-- menu chart start -->
+        <div class="menu-card">
+            <div class="card-menu" id="first-menu-img">
+                <div class="mini-div1">
+                    <h6>$55</h6>
+                </div>
+
+            </div>
+
+            <!-- second img start -->
+            <div class="card-menu" id="second-menu-img">
+                <div class="mini-div1">
+                    <h6>$15</h6>
+                </div>
+
+            </div>
+
+
+            <!-- thrird img start -->
+            <div class="card-menu" id="thrid-img">
+                <div class="mini-div1">
+                    <h6>$70</h6>
+                </div>
+
+            </div>
+
+            <!-- fouth img -->
+            <div class="card-menu" id="fouth-img">
+                <div class="mini-div1">
+                    <h6>$14</h6>
+                </div>
+
+            </div>
+
+            <!-- fift img -->
+
+            <div class="card-menu" id="fift-img">
+                <div class="mini-div1">
+                    <h6>$15
+
+                    </h6>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ----------menu card section end---------- -->
+
+    <!-- -----------chef area start------------ -->
+    <section class="chef-sec">
+        <div class="chef-mini-div">
+            <div class="chef-info">
+                <h6> ---Our Chefs</h6>
+                <h2>We offer the best ingredients for you</h2>
+
+            </div>
+            <div class="chef-img">
+                <div class="chef-img-2">
+                    <img src="https://themewagon.github.io/klassy-cafe/assets/images/chefs-01.jpg" alt="" id="mediaji">
+                    <div class="chef-img-1-info">
+                        <h4>Randy Walker</h4>
+                        <span>Pastry Chef</span>
+                    </div>
+                </div>
+
+
+                <div class="chef-img-2">
+                    <div class="chef-img-2.2">
+                        <img src="https://themewagon.github.io/klassy-cafe/assets/images/chefs-02.jpg" alt=""
+                            id="mediaji">
+
+
+                    </div>
+                    <div class="chef-img-1-info">
+                        <h4>David Martin</h4>
+                        <span>Cookie Chef</span>
+                    </div>
+
+                </div>
+
+
+                <div class="chef-img-2">
+                    <div class="chef-img-2.2">
+                        <img src="https://themewagon.github.io/klassy-cafe/assets/images/chefs-03.jpg" alt=""
+                            id="mediaji">
+                    </div>
+                    <div class="chef-img-info-3">
+                        <h4>Peter Perkson</h4>
+                        <span>Pancake Chef</span>
+                    </div>
+
+
+                </div>
+
+    </section>
+
+
+    <!-- chef section end -->
+
+    <!-- contact menu start -->
+    <section class="contact-sec">
+        <div class=" conatiner-contact">
+            <div class="row-1 roji">
+                <div class="heading-contact">
+                    <h6>---CONTACT US</h6>
+                    <h2>Here You Can Make A Reservation Or Just walkin to our cafe</h2>
+
+                </div>
+                <p id="para"> Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend riqsie, namei
+                    sollicitudin urna diam, sed commodo purus porta ut.
+                </p>
+                <div class="mini-row">
+                    <div class="mini-cont">
+
+                        <div class="logo">
+                            <div class="tag">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <h6 class="num">Phone Numbers</h6>
+                            <span class="num">
+                                <a href="#">080-090-0990</a>
+                                <br>
+                                <a href="">080-090-0990 </a>
+                            </span>
+                        </div>
+
+
+                    </div>
+                    <div class="mini-cont">
+                        <div class="logo">
+                            <div class="tag">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <h6 class="num">Emails</h6>
+                            <span class="num">
+                                <a href="#">hello@company.com</a>
+                                <br>
+                                <a href="#">info@company.com
+                                </a>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row-1 roww">
+                <div class="table">
+                    <h4>Table Reservation</h4>
+
+                </div>
+                <div class="inputtag">
+                    <div class="input-2">
+                        <input type="text" placeholder="Your Name*">
+                        <input type="text" placeholder="Phone Number*">
+                        <input type="text" placeholder="dd/mm/yyyy">
+
+
+                    </div>
+                    <div class="input-2">
+                        <input type="text" placeholder="Your Email Address">
+                        <input type="text" placeholder="Number Of guests">
+                        <input type="text" placeholder="Time">
+
+
+                    </div>
+
+                    <div class="mssg">
+                        <textarea name="" id="mms" cols="30" rows="10">massge</textarea>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+        </div>
+
+
+
+    </section>
+    <!-- contact area end  -->
+    <!-- meal area start -->
+
+    <section class="meal-area">
+
+        <div class="meal-cont">
+            <div class="meal-heading">
+                <h6>Klassy Week</h6>
+                <h2>This Weeks Special Meal Offers</h2>
+            </div>
+
+            <div class="mix">
+                <div class="icons">
+                    <div class="mini-icon">
+                        <div class="first-icon">
+                            <a href="">
+                                <img src="https://themewagon.github.io/klassy-cafe/assets/images/tab-icon-01.png"
+                                    alt="">
+
+
+                            </a>
+                        </div>
+
+                        <div class="first-icon">
+                            <a href="">
+                                <img src="https://themewagon.github.io/klassy-cafe/assets/images/tab-icon-02.png"
+                                    alt="">
+                            </a>
+                        </div>
+
+
+                        <div class="first-icon">
+                            <a href="">
+                                <img src="https://themewagon.github.io/klassy-cafe/assets/images/tab-icon-03.png"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="meal-book">
+                    <div class="meal-book1 meallu">
+                        <div class="food-list">
+                            <div class="meal-mini">
+                                <img src="https://themewagon.github.io/klassy-cafe/assets/images/tab-item-01.png"
+                                    alt="">
+                            </div>
+                            <div class="meal-para">
+                                <h4>Fresh Chicken Salad</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6>$10.5</h6>
+                            </div>
+                        </div>
+
+
+                        <div class="food-list">
+                            <div class="meal-mini">
+                                <img src="https://themewagon.github.io/klassy-cafe/assets/images/tab-item-02.png"
+                                    alt="">
+                            </div>
+                            <div class="meal-para">
+                                <h4>Orange Juice</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6>$20.5</h6>
+                            </div>
+
+
+                        </div>
+                        <div class="food-list">
+                            <div class="meal-mini">
+                                <img src="https://themewagon.github.io/klassy-cafe/assets/images/tab-item-03.png"
+                                    alt="">
+                            </div>
+                            <div class="meal-para">
+                                <h4>Fruit Salad</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6>$25.5</h6>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="meal-book1">
+                        <div class="food-list">
+                            <div class="meal-mini">
+                                <img src="https://themewagon.github.io/klassy-cafe/assets/images/tab-item-04.png"
+                                    alt="">
+                            </div>
+                            <div class="meal-para">
+                                <h4>Eggs Omelette</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6>$15.5</h6>
+                            </div>
+
+                        </div>
+
+
+                        <div class="food-list">
+
+                            <div class="meal-mini">
+                                <img src="https://themewagon.github.io/klassy-cafe/assets/images/tab-item-05.png"
+                                    alt="">
+                            </div>
+                            <div class="meal-para">
+                                <h4>Dollma Pire</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6>$10.5</h6>
+                            </div>
+                        </div>
+
+
+
+                        <div class="food-list">
+                            <div class="meal-mini">
+                                <img src="https://themewagon.github.io/klassy-cafe/assets/images/tab-item-06.png"
+                                    alt="">
+                            </div>
+                            <div class="meal-para">
+                                <h4>Omelette & Cheese</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6>$30.5</h6>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+        </div>
+
+
+    </section>
+    <!-- foooter start -->
+   
+    
+
+
+
+
+
+</body>
+
+</html>
