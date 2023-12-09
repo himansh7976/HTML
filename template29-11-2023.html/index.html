@@ -10,6 +10,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+
+        
         * {
             margin: 0;
             padding: 0;
@@ -86,19 +88,24 @@
 
 
         .menufeacter {
+            /* background-color:blueviolet; */
             border-radius: 10px 10px 10px 10px;
-            height: 100px;
-            width: 85px;
+            height:18%;
+            width: 10%;
             /* border: 2px solid; */
             background-color: white;
-            display: none;
+            visibility: hidden;
             position: absolute;
             top: 70px;
+            padding:10px;
+            
+
 
         }
 
         #fec:hover .menufeacter {
-            display: block;
+            /* display: block; */
+            visibility: visible;
 
 
         }
@@ -180,12 +187,14 @@
             margin: 10px;
             font-size: 30px;
             color: antiquewhite;
+            /* font-family: 'Dancing Script', cursive; */
         }
 
         .inner-conatiner h6 {
             margin: 10px;
             padding: 5px;
             color: antiquewhite;
+            /* letter-spacing: 3px; */
 
         }
 
@@ -237,7 +246,9 @@
             /* border: 2px solid brown; */
             display: flex;
             justify-content: center;
+        
             align-items: center;
+            justify-content: space-evenly;
             flex-wrap: wrap;
         }
 
@@ -250,7 +261,10 @@
             /* position: relative; */
             display: flex;
             justify-content: center;
-            align-items: center
+            align-items: center;
+            justify-content: space-around;
+            /* flex-wrap: wrap; */
+            
         }
 
         .aboutbox1 {
@@ -318,7 +332,7 @@
         }
 
         .row-img img {
-            width: 100%;
+            width: 80%;
             height: 500px%;
         }
 
@@ -343,7 +357,7 @@
 
         @media (max-width:700px) {
             .aboutbox1 {
-                min-width: 100%;
+                /* min-width: 100%; */
 
             }
 
@@ -359,25 +373,29 @@
         /* cards area start */
 
         .menucard-section {
-            height: 800px;
+            /* height:; */
             width: 100%;
-            border: 2px solid blueviolet;
+            /* border: 2px solid blueviolet; */
             /* margin-top: 90px; */
-            padding-top: 80px;
+            /* padding-top: 80px; */
             padding-bottom: px;
         }
 
         .menu-card-cont {
-            height: 150px;
-            width: 50%;
+            height:20vh;
+            width: 100%;
             /* border: 2px solid black; */
             /* padding-right: 15px;
             padding-left: 15px; */
             /* padding: 120px 120px; */
-            margin-right: auto;
-            margin-left: 30%;
+            
+            /* margin-left: 30%; */
             display: flex;
-            /* justify-content: center; */
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+            
 
 
 
@@ -389,7 +407,7 @@
 
         .menu-heading {
             padding-right: ;
-            border: 2px solid;
+            /* border: 2px solid; */
             width: 250px;
 
 
@@ -414,7 +432,7 @@
             /* margin-top: px; */
             /* margin-bottom: 25px; */
             font-size: 25px;
-            font-weight: 900px;
+            font-weight: 1000;
             color: #2a2a2a;
         }
 
@@ -431,7 +449,7 @@
             margin: 5px;
             height: 400px;
             width: 100%;
-            border: 2px solid;
+            /* border: 2px solid; */
             /* margin-top: 50px; */
             display: flex;
             justify-content: center;
@@ -447,7 +465,7 @@
         .card-menu {
             height: 40vh;
             width: 18%;
-            border: 2px solid green;
+            /* border: 2px solid green; */
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -480,6 +498,7 @@
             background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-04.jpg);
             background-repeat: no-repeat;
             /* background-size: cover; */
+            background-size: auto;
 
         }
 
@@ -518,8 +537,8 @@
         /* --------chef info start------ */
         /* animation is panding */
         .chef-sec {
-            padding-top: 120px;
-            height: 650px;
+            padding-top: 50px;
+            height: 600px;
             width: 100%;
             border: 2px solid;
             margin-top: 50px;
@@ -572,9 +591,9 @@
         }
 
         .chef-img {
-            margin: 5px;
-            height: 325px;
-            width: 75%;
+            /* margin: 5px; */
+            /* height: 40vh; */
+            /* width: 100%; */
             border: 2px solid yellow;
             display: flex;
             justify-content: center;
@@ -637,6 +656,13 @@
             border: 4px solid gray;
             /* min-width: 20%%; */
         }
+        .
+
+
+
+
+
+        
 
         @media (max-width:550) {
             .chef-img-2 {
@@ -685,13 +711,9 @@
 
         }
 
-        @media (max-width:400px) {
-            #mediaji {
-                /* height: fit-content; */
-            }
+      
 
-
-        }
+        
 
         /* animation is panding */
 
@@ -703,10 +725,12 @@
             /* margin-top: 100px; */
             display: flex;
             justify-content: center;
-            align-items: center;
+            /* align-items: center; */
             background-position: center;
 
         }
+
+      
 
         .conatiner-contact {
             height: 60vh;
@@ -717,13 +741,50 @@
             align-items: center;
             justify-content: space-around;
 
-
-
-
-
-
-
         }
+
+        @media (max-width:600px) {
+            .conatiner-contact{
+                /* height: fit-content; */
+                display: block;
+                /* margin-left: 50px; */
+               
+            }
+
+            .contact-sec{
+                height: 500px;
+                /* width: 400px; */
+                /* height: fit-content; */
+                justify-content: center;
+                /* align-items: center; */
+                
+                 
+
+            }
+            .roji{
+                margin-left: 35px;
+            }
+
+            .roww{
+                margin-top: 50px;
+            
+            }
+            .row-1{
+                width: 100%;
+                height: 48%;
+            }
+
+
+        
+            
+
+
+
+            
+        }
+
+
+
 
         .row-1 {
             height: 60vh;
@@ -1026,9 +1087,9 @@
         }
 
         .mix {
-            height: 70vh;
+            height: 70vh
             width: 100%;
-            border: 2px solid;
+            /* border: 2px solid; */
 
         }
 
@@ -1040,7 +1101,7 @@
 
         .first-icon img {
             margin-top: 20px;
-            border: 2px solid;
+            /* border: 2px solid; */
             height: 5vh;
         }
 
@@ -1048,14 +1109,14 @@
             margin-top: 10  px;
             height: 55vh;
             width: 100%;
-            border: 2px solid;
+            /* border: 2px solid; */
             display: flex;
         }
 
         .meal-book1 {
             height: 55vh;
             width: 50%;
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1065,7 +1126,7 @@
         .food-list {
             height: 15vh;
             width: 100%;
-            border: 2px solid;
+            /* border: 2px solid; */
             /* position: relative; */
             /* position: absolute ; */
             position: relative;
@@ -1086,7 +1147,7 @@
 
         .meal-para {
 
-            border: 2px solid pink;
+            /* border: 2px solid pink; */
             padding-left: 10px;
             width: 70%;
             font-size: 15px;
@@ -1111,6 +1172,51 @@
         .price h6 {
             font-size: 25px;
             padding: 5px;
+        }
+
+        @media (max-width:900px){
+
+            .meal-book{
+
+                display: block;
+            }   
+            .meal-book1{
+
+                width:100%;
+            }
+        }
+        @media (max-width:550px) {
+            .food-list h4,p{
+                font-size: 10px;
+            }
+            /* .food-list p{
+                font-size: 10px;
+            } */
+
+            .price{
+                height:50%;
+                width: 15%;
+            }
+            .price h6{
+                font-size: 15px;
+            }
+            .meal-mini img{
+                height: 50px;
+
+            }
+            
+
+        }
+
+
+
+
+
+        @media (max-width:900px) {
+            .meal-area{
+                height:fit-content ;
+            }
+            
         }
 
      
@@ -1387,6 +1493,7 @@
                     <div class="chef-img-2.2">
                         <img src="https://themewagon.github.io/klassy-cafe/assets/images/chefs-02.jpg" alt=""
                             id="mediaji">
+                          
 
 
                     </div>

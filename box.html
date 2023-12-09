@@ -4,65 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
-        .cont{
-            height: 100vh;
-            width: 50%;
-            border-style: 2px solid black;
-            padding: 50px;
-            margin: 10px;
-            background-color: blue;
-            flex-wrap: wrap;
-             display: flex;        
-            /* justify-content: center; */
-
-        */
-
-                }        .head{
-           background-color: black;
-           height: 50px;
-           margin: 25px;
-
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .aside{
-            background-color: green;
-            height: 300px;
-            width: 150px;
-
+        body{
+            height: 100%;
+            width: 100%;
+            background-color: aqua;
         }
-        .contant{
-            background-color: blueviolet;
-            height: 150px;
-            width: 300px;
-            margin: 100px;
-            margin-top: 10px;
-
-
-
-        }
-        .commit{
+        .container{
+            height:50vh;
+            width: 100vw;
+            background-color: brown;
             display: flex;
             justify-content: center;
-        
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
-        .section{
-            background-color: brown;
-            height: 150px;
-            width: 300px;
+        .box1{
+            height:50%;
+            width: 20%;
+            background-color: blue;
+            border: 3px solid;
+            /* flex-wrap: wrap; */
         }
-        
+        .box2{
+            height:50%;
+            width: 25%;
+            background-color: red;
+            border: 3px solid;
+
+        }
+        .box3{
+            height: 50%;
+            width: 25%;
+            background-color: chocolate;
+            border: 3px solid;
+        }
+
+
+
+
+
+
     </style>
 </head>
 <body>
-    <div class="cont">
-        <div class="head">header</div>
-        <div class="head"></div>
-        <div class="commit">
-            <div class="aside"></div>
-            <div class="contant"></div>
-            <div class="section"></div>
-        </div>
-        <div class="foot"></div>
+    <div class="container">
+
+
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
     </div>
+   
+
+    
 </body>
 </html>
