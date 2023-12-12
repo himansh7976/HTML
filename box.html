@@ -4,48 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        div{
+            /* background-color:brown; */
         }
-        body{
-            height: 100%;
-            width: 100%;
-            background-color: aqua;
-        }
-        .container{
-            height:50vh;
-            width: 100vw;
-            background-color: brown;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .box1{
-            height:50%;
-            width: 20%;
-            background-color: blue;
-            border: 3px solid;
-            /* flex-wrap: wrap; */
-        }
-        .box2{
-            height:50%;
-            width: 25%;
-            background-color: red;
-            border: 3px solid;
+        .red{
+            /* background-color:red        } */
 
+
+            /* child sector */
         }
-        .box3{
-            height: 50%;
-            width: 25%;
-            background-color: chocolate;
-            border: 3px solid;
+        .red>p{
+            background-color: blueviolet;
         }
+
+
+        /* pseudo selector */
+
+        a:visited{
+        color: yellow;
+        }
+       
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellowgreen;
+        }
+
+
+        /* first child sedo */
+        p:first-child{
+            background-color: black;
+        }
+        p:sceonf
+
+
 
 
 
@@ -55,15 +49,15 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="red">
+        <p>xdcfvghhjkjkbjnkm,</p>
+        <p>ghfgdssbfvcs</p>
 
-
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
     </div>
-   
-
+    <div>
+    <a href="https://www.google.com">go to the google </a>
+    <a href="">go thr fb</a>
+    </div>
     
 </body>
 </html>
