@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>john deo template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            height: 95vh;
+            width: 100%;
+            background-color: black;
+        }
+
+        header {
+            height: 95vh;
+            width: 100%;
+            border: 2px solid;
+            background-image: url(john\ deo\ backgroud\ img.jpg);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8;
+            background-attachment: fixed;
+
+
+        }
+
+
+        .social-icon {
+            /* border: 2px solid yellow; */
+            display: flex;
+            font-size: 3vh;
+            justify-content: space-around;
+            max-width: 30vh;
+            margin-left: 5vh;
+            margin-top: 5vh;
+
+
+
+
+
+        }
+
+        .social-icon li {
+            text-decoration: none;
+            font-size: larger;
+            list-style-type: none;
+
+
+        }
+
+        .icon1 a {
+            color: antiquewhite;
+
+
+        }
+
+        .header-contant {
+            width: 50%;
+            color: antiquewhite;
+            position: relative;
+            top: 40vh;
+            left: 10vh;
+            /* border: 2px solid; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .header-contant h4 {
+            font-size: 5vh;
+
+        }
+
+        .header-contant h1 {
+            font-size: 10vh;
+        }
+
+        .header-contant h6 {
+            font-size: 2.5vh;
+        }
+
+        .header-contant button {
+            margin-top: 10px;
+            font-size: 2vh;
+            border-radius: 50px 50px 50px 50px;
+            padding: 1vh;
+            background-color: #f85c70;
+
+            border: #f85c70;
+            color: antiquewhite;
+            margin-top: 3vh;
+
+
+
+
+        }
+
+
+        /* header are complete */
+        /* nav area start */
+        nav {
+            /* padding: 10px;    */
+            /* height: 20vh;     */
+            /* border: 2px solid; */
+            
+
+
+        }
+
+        .nav-cont {
+            height: 10vh;
+            border: 2px solid gainsboro;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .nav-1 {
+            /* height: 9vh;  */
+            /* border: 2px solid brown; */
+            width: 25%;
+
+        }
+
+        .nav-1 ul {
+            display: flex;
+            justify-content: center;
+
+            justify-content: space-evenly;
+            list-style-type: none;
+
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            /* color: black; */
+            color: rgba(0, 0, 0, .8);
+            font-size:2vh;
+            font-weight: 600;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .nav-2 {
+
+            width: 15%;
+
+        }
+
+        .nav-img img {
+            border-radius: 50%;
+            height: 25vh;
+            border: 10px solid white;
+            position: relative;
+            bottom: 10vh;
+
+            /* padding: 5px; */
+        }
+
+        .nav-img {
+            height: 5vh;
+        }
+
+        #bar {
+            font-size: 20px;
+            display: none;
+        }
+
+        @media (max-width:640px) {
+            #bar {
+                display: block;
+            }
+
+            .nav-1 ul {
+                display: none;
+            }
+
+            .nav-img img {
+                display: none;
+            }
+
+        }
+
+
+
+
+        /* navend------------ */
+
+        /* section3 start */
+        .section3 {
+
+
+            /* width: 100%; */
+            border: 2px solid gainsboro;
+            /* padding-left: 15px;
+            padding-right: 15px; */
+            display: flex;
+        }
+
+        .info {
+            width: 100%;
+            height: 60vh;
+            border: 0.1px solid gainsboro;
+            padding: 6vh;
+            position: relative;
+
+        }
+
+        .heading-info {
+            font-size: 4vh;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 300;
+            color: rgb(15, 15, 15);
+
+        }
+
+        .info h5 {
+            margin-top: 5vh;
+            font-size: 3vh;
+            font-weight: 100;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .info p {
+            font-size: 2vh;
+            margin-top: 2vh;
+            opacity: .8;
+        }
+
+        .info button {
+            font-size: 2vh;
+            margin-top: 1.5vh;
+            padding: 1.5vh;
+            border-color: #f85c70;
+            color: #f85c70;
+            background-color: white;
+        }
+
+        .Personal-info {
+            margin-top: 5vh;
+        }
+
+        .Personal-info li {
+            padding: 1vh;
+            font-size: 2vh;
+            color: #6c757d;
+            list-style-type: none;
+
+        }
+
+        .Personal-info li span {
+            color: black;
+            font-weight: 700;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.8vh;
+
+        }
+
+        .Personal-icon {
+            list-style-type: none;
+            display: flex;
+            /* justify-content: space-evenly; */
+            margin-top: 2vh;
+
+
+
+        }
+
+        .Personal-icon li a {
+
+            font-size: 3vh;
+            color: #f85c70;
+            padding: 15px;
+
+        }
+
+        .Expertise-cont {
+            margin-top: 3vh;
+            /* border: 2px solid; */
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .Expertise-mini {
+            /* height: 10vh; */
+
+        }
+
+        .Expertise-mini i {
+            font-size: 4.5vh;
+            color: #f85c70;
+        }
+
+        .Expertise-mini h6 {
+            font-size: 2.5vh;
+            margin-left: 2vh;
+            font-weight: 100;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .heading-info::after{
+
+
+            content: "";
+            border: 1px solid red;
+            width: 10%;
+            position: absolute;
+            left: 6vh;
+            top: 11vh;
+            
+        }
+
+        @media (max-width:1430px) {
+            .section3{
+                display: block;
+            }
+            
+        }
+
+        /* section3 end------------ */
+        /* section4 start----------- */
+        .section4{
+            /* height: 100vh; */
+            /* border: 2px solid; */
+            padding:5vh;
+            
+
+        }
+        .section4 span{
+            color: #f85c70;
+        }
+        .section4 h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            /* border: 2px solid; */
+            font-size: 4vh;
+
+        }
+        .sec4-mini{
+            /* height: 90vh; */
+            width: 100%;
+            /* border: 2px solid yellow; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 2VH;
+        }
+        .resume{
+            /* height: 85vh; */
+            width:30%;
+            border: 2px solid gainsboro;
+            padding: 3vh;
+                }
+
+        .resume h4{
+            font-size: 4vh;
+            font-weight: 300;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .under-line{
+            margin-top: 3px;
+            width: 2vw;
+            border: 0.9px solid;
+            display: block;
+        }
+        .resume h6{
+            margin-top: 3vh;
+            font-size: 2.8vh;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+            font-weight: 100;
+            color: #f85c70;
+
+            
+        }
+        .resume-para{
+            margin-top: 2vh;
+            font-size:2.1vh;
+            color: #6c757d;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 2vh;
+        }
+        .skills-cont{
+            /* margin-top: 3vh; */
+            height: 75vh;
+            /* border: 2px solid; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        .skills-mini{
+            height: 35vh;
+            /* border: 2px solid; */
+        }
+        .skills-logo{
+            color:#6c757d;
+            font-size:2.5vh;
+            font-weight:200;
+            margin-top: 2vh;       }
+        .progress{
+            margin-top: 1vh;
+            height:1vh;
+            background-color: aliceblue;
+        }
+        .mini-progress{
+            height: 1vh;
+            background-color: #f85c70;
+            width: 91%;
+            border-radius: 1vh 0vh 0vh 1vh;
+            
+        }
+        
+            
+
+            
+        
+        @media (max-width:900px) {
+            .sec4-mini{
+                /* display: block; */
+            }
+            .resume{
+                width: 50%;
+              }
+            .resume2{
+                width: 100%;
+            }
+           
+            
+        }
+        @media (max-width:500px) {
+            .sec4-mini{
+                /* display: block; */
+            }
+            .resume{
+                width: 80%;
+              }
+            .resume2{
+                width: 100%;
+                
+            }
+
+           
+            
+        }
+        
+
+      
+       
+        
+
+    </style>
+</head>
+
+<body>
+    <!-- section1 start -->
+    <div class="main-container">
+        <header>
+
+            <ul class="social-icon">
+                <li class="icon1">
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                </li>
+                <li class="icon1">
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="icon1">
+                    <a href="">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                </li>
+                <li class="icon1">
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="icon1">
+                    <a href="">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="header-contant">
+                <h4>Hello, I am </h4>
+                <h1>John Doe</h1>
+                <h6>Frond end Designer | Developer</h6>
+                <button>
+
+                    <i class="fa-solid fa-print"></i>
+                    Print Resume</button>
+
+            </div>
+        </header>
+    </div>
+    <!-- section 1 end--------- -->
+    <!-- section2 start----------- -->
+    <nav>
+        <div class="nav-cont">
+            <div class="nav-1">
+                <ul class="list">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="##">About</a>
+                    </li>
+                    <li>
+                        <a href="##">Resume</a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="nav-1 nav-2">
+                <div class="nav-img">
+                    <img src="johndeo nav-img.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav-1">
+                <ul class="list">
+
+                    <li>
+                        <a href="##">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="##">Contact</a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <i class="fa-solid fa-bars" id="bar"></i>
+        </div>
+
+
+
+
+    </nav>
+    <!-- -------------nav end----------- -->
+    <!-- -------------section3 start------ -->
+    <section class="section3">
+
+        <div class="info">
+            <h3 class="heading-info">Who am I ?</h3>
+            <span></span>
+            <h5>A Web Designer / Developer Located In Our Lovely Earth</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet, Qui deserunt consequatur fugit
+                repellendusillo voluptas?</p>
+            <button>Download My CV</button>
+        </div>
+        <div class="info">
+            <h3 class="heading-info">Personal Info</h3>
+            <span></span>
+            <ul class="Personal-info">
+                <li>
+                    <span>Birthdate</span>
+                    : 09/13/1996
+                </li>
+                <li>
+                    <span>Email</span>
+                    : info@domain.com
+                </li>
+                <li>
+                    <span>Phone</span>
+                    : + (123) 456-7890
+                </li>
+                <li>
+                    <span>Skype</span>
+                    : John_Doe
+                </li>
+                <li>
+                    <span>Address</span>
+                    : 12345 Fake ST NoWhere AB Country.
+                </li>
+            </ul>
+            <ul class="Personal-icon">
+                <li>
+                    <a href="##">
+                        <i class="fa-brands fa-facebook"></i>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <i class="fa-brands fa-github-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="info">
+            <h3 class="heading-info">My Expertise</h3>
+            <span></span>
+            <div class="Expertise-cont">
+                <div class="Expertise-mini">
+                    <i class="fa-solid fa-snowflake"></i>
+                </div>
+                <div class="Expertise-mini">
+                    <h6>UX Design</h6>
+                    <p>exercitat Repellendus, corrupt.</p>
+                    <hr>
+                </div>
+
+
+            </div>
+            <div class="Expertise-cont">
+                <div class="Expertise-mini">
+                    <i class="fa-solid fa-fill-drip"></i>
+                </div>
+                <div class="Expertise-mini">
+                    <h6> Web Development</h6>
+                    <p>Lorem ipsum dolor sit consectetur.</p>
+                    <hr>
+                </div>
+            </div>
+
+
+            <div class="Expertise-cont">
+                <div class="Expertise-mini">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                </div>
+                <div class="Expertise-mini">
+                    <h6>Digital Marketing</h6>
+                    <p>voluptate commodi illo voluptatib.</p>
+                    <hr>
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+
+
+
+
+
+
+    </section>
+    <!-- section3 is end -->
+    <!-- ----------section4 start--------- -->
+    <section class="section4">
+        <h2>
+            <span>My</span>
+            Resume
+        </h2>
+       
+        <div class="sec4-mini">
+            <div class="resume resume11">
+                <h4 class="resume-head">Expertise</h4>
+                <span class="under-line"></span>
+                <h6>2017 - Present</h6>
+                <p class="resume-para">UX Developer</p>
+                <p class="resume-para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+
+                </p>
+
+
+                <hr>
+                <h6>2017 - 2025</h6>
+                <p class="resume-para">UX Developer</p>
+                <p class="resume-para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+                    </p>
+
+
+                    <hr>
+                    <h6>2017 - 2020</h6>
+                    <p class="resume-para">UX Developer</p>
+                    <p class="resume-para">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+                        </p>
+                        <hr>
+
+
+
+
+
+
+                
+
+            </div>
+            <div class="resume resume11">
+                <h4 class="resume-head">Education</h4>
+                <span class="under-line"></span>
+                <h6>2017 - 2020</h6>
+                <p class="resume-para">UX Developer</p>
+                <p class="resume-para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+
+                </p>
+
+
+                <hr>
+                <h6>2017 - 2025</h6>
+                <p class="resume-para">UX Developer</p>
+                <p class="resume-para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+                    </p>
+
+
+                    <hr>
+                    <h6>2017 - 2020</h6>
+                    <p class="resume-para">UX Developer</p>
+                    <p class="resume-para">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+                        </p>
+                        <hr>
+
+            </div>
+            <div class="resume resume2">
+                <h4 class="resume-head">Skills</h4>
+                <span class="under-line"></span>
+                <div class="skills-cont">
+                   
+
+                    <div class="skills-mini">
+
+                        <h5 class="skills-logo">hTL5 & CSS3</h5>
+                        <div class="progress">
+                            <div class="mini-progress"></div>
+                        </div>
+
+                        <h5 class="skills-logo">JavaScript</h5>
+                        <div class="progress">
+                            <div class="mini-progress"></div>
+                        </div>
+
+                        <h5 class="skills-logo">PHP</h5>
+                        <div class="progress">
+                            <div class="mini-progress"></div>
+                        </div>
+
+                        <h5 class="skills-logo">SQL</h5>
+                        <div class="progress">
+                            <div class="mini-progress"></div>
+                        </div>
+
+                        
+                        <h5 class="skills-logo">Laborum</h5>
+                        <div class="progress">
+                            <div class="mini-progress"></div>
+                        </div>
+
+                     
+
+
+                        
+
+
+
+
+                    </div>
+
+
+
+
+                    <div class="skills-mini">
+
+                        <h4 class="resume-head">Languages</h4>
+                        <span class="under-line"></span>
+
+                        <h5 class="skills-logo">English
+                        <div class="progress">
+                            <div class="mini-progress"></div>
+                        </div>
+
+                        <h5 class="skills-logo">French</h5>
+                        <div class="progress">
+                            <div class="mini-progress"></div>
+                        </div>
+
+                        <h5 class="skills-logo">Spanish</h5>
+                        <div class="progress">
+                            <div class="mini-progress"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+   
+
+</body>
+
+</html>
