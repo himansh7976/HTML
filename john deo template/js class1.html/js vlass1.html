@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1 id="h1">himanshu</h1>
+    <button id="red">red</button>
+    <button id="yellow">yellow</button>
+    <button id="green">green</button>
+    <button id="blue">blue</button>
+    <button id="date"></button>
+    <script>
+
+        // consol is used for show output
+        // console.log("hello world");
+
+        // alert are used for show Notification popup
+        // alert("helo world")
+
+
+        // document.write("hello world")
+        document.getElementById("red").onclick= function(){
+            // console.log("mainn red")
+            document.getElementById("h1").style.color = "red";
+            document.getElementById("body").style.backgroundColor="black";
+        }
+        document.getElementById("yellow").onclick= function(){
+            // console.log("mainn yellow")
+            document.getElementById("h1").style.color="yellow";
+            document.getElementById("body").style.backgroundColor="red";
+        }
+        document.getElementById("green").onclick= function(){
+            // console.log("mainn green")
+            document.getElementById("h1").style.color="green";
+            document.getElementById("body").style.backgroundColor="pink";
+        }
+        document.getElementById("blue").onclick= function(){
+            // console.log("mainn blue")
+            document.getElementById("h1").style.color="blue";
+            document.getElementById("body").style.backgroundColor="white";
+        }
+
+        
+    </script>
+    
+</body>
+</html>

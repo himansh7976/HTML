@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js project 1</title>
+
+    <style>
+        #main-container {
+            margin: auto;
+            /* height: 50vh; */
+            width: 50%;
+            border: 2px solid black;
+            margin-top: 10vh;
+            padding: 5vh;
+            background-color:burlywood;
+        }
+
+        #sel {
+            /* height: 5vh; */
+            width: 30%;
+            padding: 1vh;
+        }
+
+        .colorji {
+            margin-top: 2vh;
+
+            height: 6vh;
+            width: 40%;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .color {
+
+            width: 15%;
+            border: 2px solid;
+            border-radius: 50%;
+
+        }
+
+
+        #Red{
+            background-color: red;
+        }
+
+        #Yellow{
+            background-color: yellow;
+        }
+
+        #Green{
+            background-color: green;
+        }
+
+        #Blue{
+            background-color: blue;
+        }
+
+        #Black{
+            background-color: black;
+        }
+
+
+        #html{
+            margin-top: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+
+        <h1 id="heading"> Selet Your Domin:</h1>
+        <select name="" id="sel">
+            <option value="--Make a choice">
+                --Make a choice
+
+            </option>
+
+            <option value="react">
+                React
+
+            </option>
+
+            <option value="Django">
+                Django
+
+            </option>
+
+            <option value="Angular">
+                Angular
+
+            </option>
+
+            <option value="AWS">
+                AWS
+
+            </option>
+
+
+
+
+
+
+
+        </select>
+
+        <div class="colorji">
+            <div class="color" id="Red"></div>
+            <div class="color" id="Yellow"></div>
+            <div class="color" id="Green"></div>
+            <div class="color" id="Blue"></div>
+            <div class="color" id="Black"></div>
+        </div>
+
+        <div id="html">
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <script>
+        document.getElementById("sel").onclick=function(){
+             let a= document.getElementById("sel").value
+              if(a=="react"){
+                document.getElementById("html").innerHTML="this  is my text ReactJS is an open-source JavaScript library used to create user interfaces in a declarative and efficient way. It is a component-based front-end library responsible only for the view layer of a Model View Controller(MVC) architecture. React is used to create modular user interfaces and promotes the development of reusable UI components that display dynamic data."
+
+              }
+
+              else if(a=="Django"){
+                document.getElementById("html").innerHTML="ReactJS is an open-source JavaScript library used to create user interfaces in a declarative and efficient way. It is a component-based front-end library responsible only for the view layer of a Model View Controller(MVC) architecture. React is used to create modular user interfaces and promotes the development of reusable UI components that display dynamic data."
+              }
+
+              else if(a=="Angular"){
+                document.getElementById("html").innerHTML="ReactJS is an open-source JavaScript library used to create user interfaces in a declarative and efficient way. It is a component-based front-end library responsible only for the view layer of a Model View Controller(MVC) architecture. React is used to create modular user interfaces and promotes the development of reusable UI components that display dynamic data."
+              }
+
+              
+              else if(a=="AWS"){
+                document.getElementById("html").innerHTML="ReactJS is an open-source JavaScript library used to create user interfaces in a declarative and efficient way. It is a component-based front-end library responsible only for the view layer of a Model View Controller(MVC) architecture. React is used to create modular user interfaces and promotes the development of reusable UI components that display dynamic data."
+              }
+
+            
+
+
+            
+        }
+        document.getElementById("Red").onclick=function(){
+            document.body.style.backgroundColor="red";
+        }
+
+        document.getElementById("Yellow").onclick=function(){
+            document.body.style.backgroundColor="Yellow";
+        }
+
+        document.getElementById("Green").onclick=function(){
+            document.body.style.backgroundColor="Green";
+        }
+
+        document.getElementById("Blue").onclick=function(){
+            document.body.style.backgroundColor="Blue";
+        }
+
+        document.getElementById("Black").onclick=function(){
+            document.body.style.backgroundColor="Black";
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
