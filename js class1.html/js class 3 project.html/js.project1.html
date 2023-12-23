@@ -16,7 +16,7 @@
             padding: 5vh;
             background-color:burlywood;
         }
-
+      
         #sel {
             /* height: 5vh; */
             width: 30%;
@@ -71,6 +71,11 @@
         #white{
             background-color: aliceblue;
         }
+
+        .butt{
+            margin-top: 10px;
+            padding:10px;
+        }
     </style>
 </head>
 
@@ -105,11 +110,6 @@
             </option>
 
 
-
-
-
-
-
         </select>
 
         <div class="colorji">
@@ -126,6 +126,12 @@
         <div id="html">
 
         </div>
+
+        <button class="butt" id="upper">upper</button>
+        <button class="butt" id="lower">Lower</button>
+        <button class="butt" id="pluse">+</button>
+        <button class="butt" id="sub">-</button>
+
 
 
 
@@ -188,6 +194,37 @@
             document.body.style.backgroundColor="white";
 
         }
+
+
+        // today class 22-12-2023
+        
+
+
+
+
+
+        document.getElementById("upper").onclick=function(){
+            document.getElementById("html").style.textTransform="uppercase";
+            
+        }
+
+        document.getElementById("lower").onclick=function(){
+            document.getElementById("html").style.textTransform="lowercase";
+        }
+
+
+          let a=16;
+        document.getElementById("pluse").onclick=function(){
+            a++;
+            document.getElementById("html").style.fontSize=a +"px";
+            
+        }
+        let c=18;
+        document.getElementById("sub").onclick=function(){
+            c--;
+            document.getElementById("html").style.fontSize=c +"px";
+        }
+
            
 
 

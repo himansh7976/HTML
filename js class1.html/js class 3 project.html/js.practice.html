@@ -68,6 +68,10 @@
             margin-top: 5vh;
         }
 
+        .but{
+            padding:10px;
+        }
+
     </style>
 </head>
 <body>
@@ -106,6 +110,7 @@
 
 
 
+
         </select>
 
         <div class="colorji">
@@ -120,6 +125,11 @@
 
         </div>
 
+        <button class="but" id="upper">upper</button>
+        <button class="but" id="lower">lower</button>
+        <button class="but" id="pluse">+</button>
+        <button class="but" id="sub">-</button>
+
 
 
 
@@ -128,60 +138,105 @@
     </div>
 
     <script>
-        document.getElementById("sel").onclick=function(){
-            // document.getElementById("").value;
-            // document.getElementById("html").innerHTML="react"
-             let a= document.getElementById("sel").value;
+        // document.getElementById("sel").onclick=function(){
+        //     // document.getElementById("").value;
+        //     // document.getElementById("html").innerHTML="react"
+        //      let a= document.getElementById("sel").value;
 
-            if(a=="react"){
-                document.getElementById("html").innerHTML   ="this is react"
+        //     if(a=="react"){
+        //         document.getElementById("html").innerHTML   ="this is react"
             
-            }
-            else if(a=="Django"){
-                document.getElementById("html").innerHTML="djanpgoigfeouwih;"
-            }
+        //     }
+        //     else if(a=="Django"){
+        //         document.getElementById("html").innerHTML="djanpgoigfeouwih;"
+        //     }
 
-            else if(a=="Angular"){
-                document.getElementById("html").innerHTML="angular is best";
-            }
-            else if(a=="AWS"){
-                document.getElementById("html").innerHTML="fuyugiopugjgkupigkhu"
-            }
+        //     else if(a=="Angular"){
+        //         document.getElementById("html").innerHTML="angular is best";
+        //     }
+        //     else if(a=="AWS"){
+        //         document.getElementById("html").innerHTML="fuyugiopugjgkupigkhu"
+        //     }
 
-            else if(a=="Make-a-choice"){
-                document.getElementById("html").innerHTML=""
+        //     else if(a=="Make-a-choice"){
+        //         document.getElementById("html").innerHTML=""
 
               
+        //     }
+
+
+
+
+            
+        // }
+        // document.getElementById("Red").onclick=function(){
+        //     document.body.style.backgroundColor="red";
+            
+
+            
+
+        // }
+        // document.getElementById("Yellow").onclick=function(){
+        //     document.body.style.backgroundColor="yellow";
+        // }
+        // document.getElementById("Green").onclick=function(){
+        //     document.body.style.backgroundColor="green";
+        // }
+        // document.getElementById("Blue").onclick=function(){
+        //     document.body.style.backgroundColor="blue";
+        // }
+        // document.getElementById("Black").onclick=function(){
+        //     document.body.style.backgroundColor="black";
+
+
+        // }
+
+        // document.getElementById("")
+
+
+
+       
+        document.getElementById("sel").onclick=function(){
+            let a=document.getElementById("sel").value;
+            if(a=="react"){
+                document.getElementById("html").innerHTML="hdgjyuydggfyk"
+            }
+            else if(a=="Django"){
+                document.getElementById("html").innerHTML="djnangofgiuyihfhyuifghgyuig"
+            }
+            else if(a=="Angular"){
+                document.getElementById("html").innerHTML="angular  hghiuhghhuhjh"
             }
 
 
-
-
-            
         }
+
         document.getElementById("Red").onclick=function(){
             document.body.style.backgroundColor="red";
-            
-
-            
-
         }
         document.getElementById("Yellow").onclick=function(){
-            document.body.style.backgroundColor="yellow";
-        }
-        document.getElementById("Green").onclick=function(){
-            document.body.style.backgroundColor="green";
-        }
-        document.getElementById("Blue").onclick=function(){
-            document.body.style.backgroundColor="blue";
-        }
-        document.getElementById("Black").onclick=function(){
-            document.body.style.backgroundColor="black";
-
-
+            document.body.style.backgroundColor="yellow"
         }
 
-       
+        document.getElementById("upper").onclick=function(){
+            document.getElementById("html").style.textTransform="uppercase";
+        }
+        document.getElementById("lower").onclick=function(){
+            document.getElementById("html").style.textTransform="lowercase";
+        }
+
+        let a=16;
+
+        document.getElementById("pluse").onclick=function(){
+            a++;
+            document.getElementById("html").style.fontSize=(a+"px");
+        }
+
+        let b=17;
+        document.getElementById("sub").onclick=function(){
+            b--;
+            document.getElementById("html").style.fontSize=(b+"px");
+        }
 
 
     </script>
