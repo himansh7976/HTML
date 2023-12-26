@@ -14,6 +14,7 @@
             height: 50vh;
             width: 70%;
             border: 2px solid black;
+            background-color:antiquewhite;
         }
         .color-cont{
             margin-top: 3vh;
@@ -56,13 +57,38 @@
     <script>
 
         document.getElementById("but").onclick=function(){
-            let a=document.getElementById("inpp").value;
-            console.log(a);
-            let b=document.getElementById("inpp2").value;
-            console.log(b);
+            // let a=document.getElementById("inpp").value;
+            // console.log(a);
+            //  let b=document.getElementById("inpp2").value;
+            // console.log(b);
             
-            document.getElementById(b).style.backgroundColor=a;
-               
+            // document.getElementById(b).style.backgroundColor=a;
+
+            // if(b==15){
+            //      document.getElementById("15").style.backgroundColor="red";
+            // }
+
+            let a =document.getElementById("inpp").value;
+            let b = document.getElementById("inpp2").value;
+
+            document.getElementById(b).style.backgroundColor = a;
+
+            // if(b==1){
+            //     document.getElementById("x").style.backgroundColor = a;
+
+            // }
+
+            // if(b==2){
+            //     document.getElementById("y").style.backgroundColor = a;
+
+            // }  if(b==3){
+            //     document.getElementById("z").style.backgroundColor = a;
+
+            // }  if(b==4){
+            //     document.getElementById("w").style.backgroundColor = a;
+
+            // }
+              
         }
         
     </script>

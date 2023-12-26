@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project4
+    </title>
+</head>
+<body>
+    <input type="text"  id="inp1">
+    <input type="text" id="inp2">
+
+    <select name="" id="sel">
+        <option value="none" id="none">none</option>
+        <option value="sub" id="sub">sub</option>
+        <option value="add" id="add">add</option>
+        <option value="multiply" id="multiply">multiply</option>
+        <option value="divide" id="didvide">divide</option>
+
+
+    </select>
+
+    <a href="" id="html">html</a>
+    <a href="" id="django">django</a>
+    <a href="" id="java">java</a>
+    <a href="" id="c++">c++</a>
+
+
+
+    <SCRipt>
+
+    document.getElementById("sel").onclick=function(){
+            let a=document.getElementById("sel").value;
+            let b=Number(document.getElementById("inp1").value);
+            let c=Number(document.getElementById("inp2").value);
+
+            console.log(a);
+            console.log(b);
+            console.log(c);
+
+
+
+     
+    //    console.log(a);
+    //    console.log(b);
+    //    console.log(c);
+   
+       if(a=="sub"){
+        let d=b-c;
+        console.log(d);
+       }
+
+       if(a=="add"){
+        let d=b+c;
+        console.log(d);
+       }
+
+       if(a=="multiply"){
+        let d=b*c;
+        console.log(d);
+       }
+
+       if(a=="didvide"){
+        let d=b/c;
+        console.log(d);
+       }
+
+    }
+
+    let h=document.querySelectorAll("a");
+    console.log(h);
+    for(let i of "a"){
+        i.onclick=function(){
+            // if()
+
+
+        }
+    }
+
+ 
+
+    
+
+    
+
+    
+
+
+   
+    //    if(a=="multiply"){
+    //     let d=b*c;
+    //     console.log(d);
+    //    }
+
+    
+    //    if(a=="didvide"){
+    //     let d=b/c;
+    //     console.log(d);
+    //    }
+
+      
+    
+
+    
+    
+
+  
+    </SCRipt>
+
+    
+</body>
+</html>
