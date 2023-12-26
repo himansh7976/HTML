@@ -29,6 +29,9 @@
 
     <SCRipt>
 
+
+
+
     document.getElementById("sel").onclick=function(){
             let a=document.getElementById("sel").value;
             let b=Number(document.getElementById("inp1").value);
@@ -67,10 +70,15 @@
 
     }
 
+
+    // prevent even function can hold a element-
+
     let h=document.querySelectorAll("a");
     console.log(h);
-    for(let i of "a"){
-        i.onclick=function(){
+    for(let i of h){
+        i.onclick=function(event){
+            console.log(i.innerText);
+            event.preventDefault();
             // if()
 
 
