@@ -145,7 +145,8 @@
         
             position: absolute;
             top: 25vh;
-            left: 12vh;
+            left: 12vh;.
+            
             padding: 5vh;
          }
          .back-deatil p{
@@ -187,28 +188,68 @@
          /* section 3start */
          .sec-3{
             padding: 2vh;
-            margin-top: 5vh;
-            height: 30vh;
+            margin-top: 10vh;
+            /* height: 30vh; */
             width:100%;
-            border: 2px solid black;
+            /* border: 2px solid black; */
          }
          .sec-3-cont{
             margin: auto;
-            height:25vh;
+            /* height:25vh; */
             width:90%;
-            border: 2px solid yellow;
+            /* border: 2px solid yellow; */
             display: flex;
             justify-content: center;
             align-items: center;
 
             justify-content: space-between;
+            flex-wrap: wrap;
          }
          .sec-mini-cont{
-            height: 20vh;
-            width: 20%;
-            border: 2px solid green;
+            /* height: 20vh; */
+            /* width: 20%; */
+            max-width: 100%;
+            /* border: 2px solid green; */
+            padding: 3vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
          }
-         
+         .sec-mini-cont i{
+
+            font-size: 5vh;
+            color: black;
+            /* position: relative; */
+            left: 10vh;
+            text-align: center;
+            display: block;
+
+
+
+         }
+         .sec-mini-cont h3{
+            margin-top: 3vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 300;
+            margin-bottom: 2vh;
+            text-transform: uppercase;
+            text-align: center;
+            
+         }
+         .sec-mini-cont p{
+            color:gray;
+            font-weight: 200;
+            text-align: center;
+
+         }
+         @media (max-width:500px) {
+            .sec-mini-cont{
+                width: 100%;
+                /* padding: 15vh; */
+            }
+            
+         }
         
 
 
@@ -325,10 +366,38 @@
 
     <section class="sec-3">
         <div class="sec-3-cont">
-            <div class="sec-mini-cont"></div>
-            <div class="sec-mini-cont"></div>
-            <div class="sec-mini-cont"></div>
-            <div class="sec-mini-cont"></div>
+            <div class="sec-mini-cont">
+                <a href="##">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                </a>
+                <h3>Money back gurantee</h3>
+                <p>Shall open divide a one</p>
+            </div>
+
+
+            <div class="sec-mini-cont">
+                <a href="##">
+                    <i class="fa-solid fa-truck"></i>
+                </a>
+                <h3>Free Delivery</h3>
+                <p>Shall open divide a one</p>
+                
+            </div>
+            <div class="sec-mini-cont">
+                <a href="##">
+                    <i class="fa-solid fa-headphones"></i>
+                </a>
+                <h3>Alway support</h3>
+                <p>Shall open divide a one</p>
+            </div>
+
+            <div class="sec-mini-cont">
+                <a href="##">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                </a>
+                <h3>Secure payment</h3>
+                <p>Shall open divide a one</p>
+            </div>
 
         </div>
 
