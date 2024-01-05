@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 1px solid;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+        .box{
+            width: 80%;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            
+        }
+        .color-box{
+            padding: 60px;
+            border: 1px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <input type="text" id="color" placeholder="color"> <input type="number" id="num" placeholder="enter number"> <button>click</button>
+        
+            <div class="box">
+                <div class="color-box"></div>
+                <div class="color-box"></div>
+                <div class="color-box"></div>
+                <div class="color-box"></div>
+                <div class="color-box"></div>
+                <div class="color-box"></div>
+                <div class="color-box"></div>
+                <div class="color-box"></div>
+            </div>
+    </div>
+    <script>
+        // document.querySelector("button").onclick = function(){
+        //    let h = document.createElement("h1");
+        //     let text = document.querySelector("input").value;
+        //     h.innerText=text;
+        //     document.querySelector("div").appendChild(h);
+        // }
+            // let btn = document.querySelector("button");
+
+            // btn.onclick=()=>{
+            //     let c = document.querySelector("#color").value;
+            //     let n = document.querySelector("#num").value;
+            //     let cls = document.querySelectorAll(".color-box");
+
+            //     for(let i=1 ; i<=cls.length ; i++){
+
+            //         if(i==n){
+            //             document.querySelectorAll(".color-box")[i-1].style.backgroundColor=c;
+            //         }
+            //     }
+            // }
+
+            document.querySelector("button").onclick=function(){
+                let c= document.querySelector("#color").value;
+                let number=document.querySelector("#num").value;
+                cls=document.querySelectorAll("color-box");
+                
+            }
+
+    </script>
+</body>
+</html>

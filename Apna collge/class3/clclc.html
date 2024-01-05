@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            
+        }
+        .clock{
+            border: 2px solid white;
+            color: white;
+            padding: 40px;
+             border-radius: 40px;
+             font-size: larger;
+             background-color: aqua;
+
+
+        }
+
+        .clock  ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            font-size: 90px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="clock">
+
+            <div id="Date">Wesanday 03 jaunary 2024</div>
+
+            <ul>
+                <li id="hours">05</li>
+                <li id="point">:</li>
+                <li id="min">20</li>
+                <li id="point">:</li>
+                <li id="sec">30</li>
+
+            </ul>
+        </div>
+        
+    </div>
+
+    <script>
+        function clock(){
+        var h=today.getHours();
+        var m=today.getminutes();
+        var s=today.getseconds();
+        var day=h<11 ? 'AM':'PM';
+        h=h<10? '0'+h:h;
+        m=m<10? '0'+m:m;
+        s=s<10? '0'+s:s;
+        document.getElementById('hours').innerHTML=h;
+        document.getElementById('min').innerHTML=m;
+        document.getElementById('sec').innerHTML =s;
+        
+
+        }
+        var inter=setInterval(clock,400);
+
+
+
+
+    </script>
+    
+</body>
+</html> 
