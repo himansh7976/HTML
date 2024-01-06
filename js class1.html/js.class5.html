@@ -28,62 +28,85 @@
 
 
     <SCRipt>
+        document.getElementById("sel").onclick=function(){
+            document.body.style.backgroundColor="blue";
+          
 
 
-
-
-    document.getElementById("sel").onclick=function(){
+            
             let a=document.getElementById("sel").value;
-            let b=Number(document.getElementById("inp1").value);
-            let c=Number(document.getElementById("inp2").value);
+            let b=document.getElementById("inp1").value;
+            let c=document.getElementById("inp2").value;
+            console.log(a,b,c);
 
-            // console.log(a);
-            console.log(b);
-            console.log(c);
+            if(a=="sub"){
+                // document.body.style.backgroundColor="yellow";
+                // document.getElementById("body").innerHTML="himahsu";
+                // let d=b-c;
+                console.log(b-c);
+            }
+            else if(a=="add"){
+                console.log(b+c);
+            }
+        }
+        
+
+
+
+
+    // document.getElementById("sel").onclick=function(){
+    //         let a=document.getElementById("sel").value;
+    //         let b=Number(document.getElementById("inp1").value);
+    //         let c=Number(document.getElementById("inp2").value);
+
+    //         // console.log(a);
+    //         console.log(b);
+    //         console.log(c);
 
 
 
      
-    //    console.log(a);
-    //    console.log(b);
-    //    console.log(c);
+    // //    console.log(a);
+    // //    console.log(b);
+    // //    console.log(c);
    
-       if(a=="sub"){
-        let d=b-c;
-        console.log(d);
-       }
+    //    if(a=="sub"){
+    //     let d=b-c;
+    //     console.log(d);
+    //    }
 
-       if(a=="add"){
-        let d=b+c;
-        console.log(d);
-       }
+    //    if(a=="add"){
+    //     let d=b+c;
+    //     console.log(d);
+    //    }
 
-       if(a=="multiply"){
-        let d=b*c;
-        console.log(d);
-       }
+    //    if(a=="multiply"){
+    //     let d=b*c;
+    //     console.log(d);
+    //    }
 
-       if(a=="didvide"){
-        let d=b/c;
-        console.log(d);
-       }
+    //    if(a=="didvide"){
+    //     let d=b/c;
+    //     console.log(d);
+    //    }
 
-    }
-
-
-    // prevent even function can hold a element-
-
-    let h=document.querySelectorAll("a");
-    console.log(h);
-    for(let i of h){
-        i.onclick=function(event){
-            console.log(i.innerText);
-            event.preventDefault();
-            // if()
+    // }
 
 
-        }
-    }
+    // // prevent even function can hold a element-
+
+    // let h=document.querySelectorAll("a");
+    // console.log(h);
+    // for(let i of h){
+    //     i.onclick=function(event){
+    //         console.log(i.innerText);
+    //         event.preventDefault();
+    //         // if()
+
+
+    //     }
+    // }
+
 
  
 
