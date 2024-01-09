@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" placeholder="Enter the value" id="inp">
+    <button id="btn1">Submit</button>
+    <button class="btn2">Add print</button>
+    <h1></h1>
+
+    <h1></h1>
+    <script>
+        // let arr=[];
+
+        //  document.querySelector("button").onclick=function(){
+        //      let f= document.querySelector("#inp").value;
+        //      arr.push(f);
+        //      console.log(arr);
+             
+
+              
+        // }
+
+        // add array using dom'
+        
+
+        let arr=[];
+        document.querySelector("#btn1").onclick=function(){
+            let ans=document.querySelector("input").value;
+            document.querySelector("input").value="";
+            document.querySelector("input").focus();
+            arr.push(ans);
+            console.log(arr);
+           
+        }
+        document.querySelector(".btn2").onclick=function(){
+            let i=0;
+            setInterval(()=>{
+                if(i>(arr.length)-1){
+                clearInterval();
+                }
+                else{
+                    document.querySelector("h1").innerText += arr[i]+ ",";
+                }
+                i++;
+            }, 10);
+        }
+        
+        // shift and add value in array[]
+
+    //  let a=[10,20,30,40,50];
+    //     console.log(a);
+    //   let ans= a.pop();
+    //   let ans2=  a.shift();
+    //     a.unshift(ans);
+    //     a.push(ans2);
+    //    console.log(a);
+
+
+    // setInterval(function(){
+    //     document.querySelector("h1").innerText
+    // })
+      
+       
+        
+        
+    
+        
+    </script>
+    
+</body>
+</html>
