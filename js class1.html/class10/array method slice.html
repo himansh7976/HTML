@@ -7,9 +7,84 @@
 </head>
 <body>
     <input type="text" name="" id="">
-    <button>tap</button>
+    <button id="arry-print">tap</button>
+    <button id="prinnt">Print Array</button>
+    <button id="btn">print both array</button>
+    <button id="btn-pop">even pop</button>
+    <button id="btn-pop2">odd pop</button>
+    <button id="btn-unshift">unshift</button>
+    <h1 class="shitt"></h1>
+   
+
+
     
     <script>
+        let arr=[];
+        let arr2=[];
+
+        let btn=document.querySelector("button");
+        btn.addEventListener("click",function(){
+            
+            let c=document.querySelector("input").value;
+            
+            if(c%2==0){
+                arr.push(c);
+                document.querySelector(".shitt").innerHTML=" even"+arr;
+
+            }
+            else if(c%2!=0){
+                arr2.push(c);
+                document.querySelector(".shitt").innerHTML="odd "+arr2;
+            }
+        
+
+
+            
+            console.log(arr);
+            console.log(arr2);
+
+            
+        })
+        
+        let print=document.querySelector("#btn");
+        print.addEventListener("click",function(){
+          
+            document.querySelector(".shitt").innerHTML="even arry="+arr +"odd arry"+arr2;
+            console.log(arr);
+            console.log(arr2);
+        });
+
+        let popp=document.querySelector("#btn-pop");
+        popp.addEventListener("click",function(){
+            document.querySelector(".shitt").innerHTML=arr
+        
+             arr.pop();
+            console.log(arr);
+
+
+        });
+
+        let printodd=document.querySelector("#btn-pop2");
+        printodd.addEventListener("click",function(){
+            document.querySelector(".shitt").innerHTML=arr2
+            arr2.pop();
+            console.log(arr2);
+        });
+
+        let printunshift=document.querySelector("#btn-unshift");
+        printunshift.addEventListener("click",function(){
+            
+            let pp= arr.pop();
+            document.querySelector(".shitt").innerHTML=arr
+            arr.unshift(pp);
+            console.log(arr);
+            
+        });
+       
+
+
+
+       
 
         // let a=[];
         // document.querySelector("button").onclick=function(){
@@ -60,10 +135,13 @@
 
 
     // flat method'
-    let a=[8,6,6[5,3,5]]
-    let b=a.flat();
-    console.log(a);
+    // let a=[8,6,6[5,3,5]]
+    // let b=a.flat();
+    // console.log(a);
 
+    // let 
+    // =[8,96,4,5,8];
+   
    
 
 
