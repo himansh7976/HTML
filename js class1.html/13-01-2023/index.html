@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-cont{
+            display: flex;
+        }
+        .box{
+            width: 10%;
+            height: 100px;
+            border: 2px solid;
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="coll">
+    <input type="number" id="num">
+    <button id="btn">sbmit</button>
+    
+    <div class="main-cont">
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    </div>
+    <script>
+        document.getElementById("btn").onclick=function(){
+            let inn=document.getElementById("coll").value;
+            
+            let innu=document.getElementById("num").value;
+            // console.log(inn,innu);.
+            document.getElementById(innu).body.style.backgroundColor= inn;
+
+        }
+        
+        
+        // document.querySelector(".box").onmouseover=function(){
+           
+            
+
+        //     let neww=document.querySelector(".box");
+           
+        //     neww.style.backgroundColor="yellow";
+            
+
+        //     console.log(neww);
+
+        // }
+    </script>
+    
+</body>
+</html>

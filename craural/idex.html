@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>crausal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .sec-1{
+            background-image: url(back.jpg);
+            height: 100vh;
+            width: 100%;
+            border: 2px  solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+        }
+        .cont-1{
+            height: 70%;
+            width: 50%;
+            /* border: 2px solid blue; */
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .active{
+            transition: all 1s ease-in-out;
+            transform: translateX(-800px);
+            /* flex: 5; */
+        }
+       
+    </style>
+</head>
+<body>
+    <section class="sec-1">
+        <!-- <i class="fa-solid fa-arrow-left"></i> -->
+        <button class="btn1">pre</button>
+        <div class="cont-1">
+            <img src="img123.jpg" alt="" class="imgg ">
+            <img src="img12.jpg" alt="" class="imgg">
+            <img src="img1234.jpg" alt="" class="imgg">
+            <img src="pizza.jpg" alt="" class="imgg">
+            
+        </div>
+      <button id="btn2">next</button>
+
+
+
+    </section>
+    <script>
+      //  let imgs=document.querySelectorAll(".imgg");
+       // console.log(imgs);
+    //    let i = imgs.length -1;
+    //    console.log(i)
+    //    document.getElementById("btn2").addEventListener("click",()=>{
+    //            imgs[i].classList.add("active") ;
+    //            i--;
+    //    })*/
+
+    let a=document.querySelector(".cont-1");
+    let b=document.querySelectorAll(".imgg");
+    let pre=document.querySelector(".btn1");
+    let next=document.querySelector(".btn2");
+   let i=b.length-1;
+//    console.log(i);
+   pre.addEventListener("click",()=>{
+       b[i].classList.add("active");
+       i--;
+        if(i<=0){
+            i=b.length-1;
+           
+        }
+
+        
+      console.log(i);
+    });
+   
+
+    
+
+    
+
+       
+       
+
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

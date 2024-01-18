@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and object</title>
+</head>
+<body>
+    <script>
+        // const student={
+        //     name:"himanshu",
+        //     age:21,
+        //     phone:79767989,
+        //     city:"jaipur",
+        //     pin_code:302020,
+
+        // };
+
+
+        // const student2={
+        //     name:"him",
+        //     age:21,
+        //     phone:79769,
+        //     city:"jaiur",
+        //     pin_code:2020,
+
+        // };
+        // const student3={
+        //     name:"nshu",
+        //     age:1,
+        //     phone:7989,
+        //     city:"jaur",
+        //     pin_code:3020,
+
+        // };
+        // const student4={
+        //     name:"hshu",
+        //     age:2,
+        //     phone:767989,
+        //     city:"pur",
+        //     pin_code:2020,
+
+        // };
+
+        // for in loop in object'
+
+
+        // for(let i in student4){
+        //     console.log(student4[i]);
+        // };
+        // let new_arry=[
+        //     {
+        //         name:"himanshu",
+        //         age:54,
+        //         phone:79797,
+
+
+        //     },
+        //     {
+        //         name:"himanshu",
+        //         age:14,
+        //         phone:79797,
+        //     },
+
+
+        //     {
+        //         name:"himanshu",
+        //         age:15,
+        //         phone:79797,
+        //     },
+        //     {
+        //         name:"nshu",
+        //         age:5,
+        //         phone:77,
+        //     },
+        //     {
+        //         name:"anshu",
+        //         age:5,
+        //         phone:79,
+        //     }
+            
+        // ];
+
+        // let fet=new_arry.filter((item)=>{
+        //     return item;
+        // })
+        // console.log(fet);
+        // for(let i of new_arry){
+        //     console.log(i.name,i.age,i.phone)
+        // };
+        // new_arry.map((item)=>{
+        //     console.log(item.name,item.age,item.phone);
+        // });
+
+      
+
+
+
+    //    for(let i in new_arry){
+    //     console.log(new_arry[i])
+    //    }
+    //     console.log(new_arry[i]);
+    //  }
+
+
+    let obj1={
+        name:"himanshu",
+        age:30,
+        cars:[
+            {
+                name:"ford",models:["fiesta","focus","mustang"]
+            },
+            {name:"bmw",model:["320","x3","x5"]},
+            {name:"fiat",model:["500","pannda"]},
+            
+        ]
+    }
+
+    let ans=obj1.cars.filter((item)=>{
+        return item.name=="BMW";
+    });
+    ans.map((item)=>{
+        console.log(item.name);
+    })
+    // let arry=obj1;
+    // console.log(arry);
+    // let nu=arry.map((item)=>{
+    //     return item;
+    // })
+    // console.log(nu);
+    
+
+
+
+//   let nu=map((item)=>{
+//        return item;
+//     })
+//     console.log(nu);
+//    let nu=obj.map((item)=>{
+//    console.log(item.cars)
+//    });
+//    console.log(nu);
+
+
+       
+
+    </script>
+    
+</body>
+</html>
