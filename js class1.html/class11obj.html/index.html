@@ -37,6 +37,61 @@
             ],
           },
         ];
+
+        let e=complexData.map(function(item){
+        let name=item.name
+        let total=item.orders.reduce((x,y)=>{
+
+         return (x.amount+y.amount)
+
+
+                })
+                return{
+
+                  fullname:name,
+                  add:total
+                  
+                }
+        // console.log(total)
+       
+      
+
+
+          
+
+        
+
+
+
+        })
+        console.log(e);
+
+
+
+        
+        
+        
+        
+                    // let c=complexData.map((i)=>{
+                    //   let name=i.name
+                    //   let total=i.orders.reduce((x,y)=>{
+                    //    return (x.amount+y.amount)
+                    //   })
+                      
+                    //   return {
+                    //     full_name:name,
+                    //     total_amout:total
+                    //   }
+                     
+        
+                      
+                   
+                    // })
+                    // console.log(c);
+
+
+
+
         
         // let i=nu.map((y)=>{
         //     return y.orderId
@@ -59,6 +114,7 @@
         // let neww=arry.map((item)=>{
             //     let i=item.name;
             //     return i;
+
             //     // return item.name;
             // });
             // console.log(neww);
@@ -90,35 +146,51 @@
             // })
             // console.log(nu);
 
-            let arry=complexData;
-            let nu=arry.map((item)=>{
-               return item.orders.map((t)=>{
-                return t.orderId;
-               });
-            })
-            console.log(nu.flat());
-
-        
-        
-        
-   
-
-
-
-
-
-
-
-
-      
-
-
-
-       
-
+            // let arry=complexData;
+            // let nu=arry.map((item)=>{
+            //    return item.orders.map((t)=>{
+            //     return t.orderId;
+            //    });
+            // })
+            // console.log(nu.flat());
 
 
         // console.log(complexData);
+
+        // let b=complexData.flatMap((item)=>{
+          
+          // return obj={
+          //   name:item.orders.map((i)=>{
+          //     return i.amount
+        //   return item.orders.map((i)=>{
+        //     return i.amount
+        //   })
+          
+          
+        // })
+        // b.reduce((x,y)=>{
+        //   console.log(x+y)
+        // })
+       
+      
+          
+          // return item.orders.map((i)=>{
+
+
+            // quedtion6
+          
+        
+        
+
+          
+          
+
+          
+      
+     
+
+      
+        
     </script>
     
 </body>

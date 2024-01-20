@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To list</title>
+
+    <style>
+        .main-cont{
+            height: 30vh;
+            width: 50%;
+            margin: auto;
+            border: 2px solid;
+        }
+        .main-cont h1{
+            text-align: center;
+        }
+      
+    </style>
+</head>
+<body>
+
+    <div class="main-cont">
+        <h1>TO Do LIST</h1>
+
+        <input type="text">
+        <button id="btn">ADD</button>
+        <ul id="list" style="list-style-type: none;">
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById("btn").onclick=function(){
+            let  val=document.querySelector("input").value;
+            let c = `<li>${val}</li>`;
+            let d = [];
+            d.push(c)
+            document.getElementById("list").innerHTML+=`<li>${val}</li>`;
+           document.getElementById("list").innerHTML+='<button class="com">complete</button>';
+         document.getElementById("list").innerHTML+='<button class="del" style="margin-left:50px">DELET</button>';
+         console.log(d,'>>>d<<<<')
+         let n=document.querySelectorAll(".com");
+         let b=document.querySelectorAll("li");
+         console.log(b,"lenght");
+  
+         for(let i = s ; i<b.length ; i++){
+
+            n[i].onclick = function(){
+                // let a = b[i].innerText;
+                
+                b[i].innerHTML=`<li > <del> ${a}</del></li>`;
+                s = i;
+            }
+         }
+   
+         console.log(n);
+         console.log(b);
+       
+
+        
+
+        }
+      
+    </script>
+    
+</body>
+</html>

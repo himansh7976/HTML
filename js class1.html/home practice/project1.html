@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            margin: auto;
+            width: 70%;
+            height: 50vh;
+            border: 2px solid ;
+        }
+        h1{
+            text-align: center;
+        }
+        .colorji {
+            margin-top: 2vh;
+
+            height: 6vh;
+            width: 40%;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .color {
+            /* height: 5vh; */
+            /* width: 15%; */
+
+            padding: 20px;
+            border: 2px solid;
+            border-radius: 50%;
+
+        }
+
+
+        #Red{
+            background-color: red;
+        }
+
+        #Yellow{
+            background-color: yellow;
+        }
+
+        #Green{
+            background-color: green;
+        }
+
+        #Blue{
+            background-color: blue;
+        }
+
+        #Black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cont">
+
+        <h1>select your domin:</h1>
+        <select name="" id="sle">
+
+            <option value="none">none</option>
+            <option value="react">react</option>
+            <option value="dh">django</option>
+            <option value="html">html</option>
+            <option value="java">java</option>
+            <option value="pytib">python</option>
+        </select>
+
+        <div class="colorji">
+            <div class="color" id="Red"></div>
+            <div class="color" id="Yellow"></div>
+            <div class="color" id="Green"></div>
+            <div class="color" id="Blue"></div>
+            <div class="color" id="Black"></div>
+            <div class="color" id="white"></div>
+
+
+        </div>
+        <div id="info"></div>
+
+        
+    </div>
+
+    <script>
+        // document.getElementById("sle").onclick=function(){
+        //     let a=document.getElementById("sle").value;
+        //     console.log(a);
+        //     if(a=="react"){
+        //         document.getElementById("info").innerHTML="kugkvkhu";
+        //     }
+          
+           
+        // }
+
+        let n=document.getElementById("info");
+        
+        let u=document.getElementById("sle");
+        u.addEventListener("click",()=>{
+            
+           let a=u.value;
+           if(a=="react"){
+            n.innerHTML="vghhuh";
+           
+
+           }
+
+        
+        })
+      
+
+
+    </script>
+    
+</body>
+</html>
