@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cal{
+            height:60vh;
+            width: 40%;
+            border: 2px solid;
+            margin: auto;
+            /* margin-top: 5%; */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        #inp{
+            width: 98%;
+            height: 20%;
+            background-color: black;
+            color: white;
+            font-size: 50px;
+        }
+
+        .btn{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .one{
+            padding: 25px;
+            
+            
+            width: 20%;
+            gap: 5px;
+            text-align: center;
+          
+
+        }
+     
+    </style>
+</head>
+<body>
+
+    <div class="cal">
+        <input type="text" name="" id="inp">
+        <div class="btn">
+            <button class="one">AC</button>
+            <button class="one">DEL</button>
+            <button class="one">%</button>
+            <button class="one">/</button>
+            <button class="one">7</button>
+            <button class="one">8</button>
+            <button class="one">9</button>
+            <button class="one">*</button>
+            <button class="one">4</button>
+            <button class="one">5</button>
+            <button class="one">6</button>
+            <button class="one">-</button>
+            <button class="one">1</button>
+            <button class="one">2</button>
+            <button class="one">3</button>
+            <button class="one">+</button>
+            <button class="one">0</button>
+            <button class="one">00</button>
+            <button class="one">.</button>
+            <button class="one">=</button>
+        </div>
+
+
+    </div>
+    <script>
+      
+        let btn=document.querySelectorAll(".one");
+        console.log(btn);
+        for(let i of btn){
+            // console.log(i.innerText);
+            i.onclick=()=>{
+
+               let u= document.querySelector("input");
+               u.value+=i.innerText;
+
+
+                // console.log(i.innerText)
+                // if(i.innerText =="="){
+                //        let digit= document.querySelector("input").value;
+                //        document.querySelector("input").value =eval(digit);
+                //        console.log(eval(digit));        
+                //     }
+
+                //     else{
+                //         document.querySelector("input").value += i.innerText;
+
+                //     }
+               
+
+
+              
+
+            }
+            
+        }
+
+       
+
+
+
+    </script>
+    
+</body>
+</html>
