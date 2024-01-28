@@ -1,11 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <script>
+
+        // symceronus is run a code line by line'
+        // console.log("one");
+        // console.log("two");
+
+
+        // asyncerounce is run a code when one line take a some time so they can't wait other they run all code
+        //      console.log("one");
+        //     console.log("two");
+
+        //   setTimeout(()=>{
+        //     console.log("himasnhu");
+        //   },3000);
+        //    console.log("there ");
+        //     console.log("four");4
+
+      
+
+        
+
     
+
+        // // callbacks function/
+        // function sum(a,b){
+        //     console.log(a+b);
+        // }
+        // function calcu(a,b,sum){
+        //     sum(a,b);
+        // }
+        // calcu(1,2,sum)
+        // function sum(a,b){
+        //     console.log(a+b);
+        // }
+        // function add(a,b,){
+
+            
+        // }
+
+        // function add(a,b){
+        //     console.log(a+b);
+        // }
+        // function yy(a,b,call){
+        //     call(a,b)
+        // }
+        // yy(5,7,add)
+
+       
+
+
+
+
+        // function sum(a,b){
+        //     console.log(a+b);
+        // }
+        // function calcul(a,b,sumcall){
+        //     sumcall(a,b);
+
+
+        // }
+        // calcul(1,2,sum)
+        // function sum(a,b){
+        //     console.log(a+b)
+
+        // }
+        // function calcu(c,e,sumcall){
+        
+        //     sumcall(c,e);
+
+            
+        // }
+        // calcu(1,2,sum);
+
+       
+        
+
+        // callbacks hell'=========================
+
+        // function getdata(data){
+
+        //     setTimeout(()=>{
+        //          console.log("data",data);
+        //     },2000);
+        // }
+
+        // this all data are show in 2 sec ek sath'
+        // getdata(123)
+        // getdata(12)
+        // getdata(1)
+
+       
+
+        // but we want a data one by one and sec of break'
+
+        // function getdata(data ,nextdata) {
+
+        //     setTimeout(() => {
+        //         console.log("data", data);
+        //         if(nextdata){
+        //             nextdata();
+
+        //         }
+        //     }, 2000);
+        // }
+
+        // getdata(123,()=>{
+        //     getdata(321,()=>{
+        //         getdata(3);
+        //     });
+        // });
+
+
+
+        // practice
+
+        // function getfood(data,ne){
+        //     setTimeout(()=>{
+        //         console.log("dish=",data)
+        //         ne();
+        //     },2000)
+        // }
+        // getfood("pizza",()=>{
+        //     getfood("buger",()=>{
+        //         getfood("patty")
+        //     });
+        // })
+
+        // function get(a){
+        //    setTimeout(()=>{
+        //     console.log(a)
+        //    },2000)
+        // }
+        // get(5)
+
+        // function data(a,get){
+        //     setTimeout(()=>{
+        //         console.log(a)
+        //         get();
+                
+        //     },2000) 
+        // }
+        // data("pizza",()=>{
+        //     data("buger",()=>{
+        //         data("patty")
+        //     })
+        // })
+
+
+        // callbacks using return 
+
+        // function gt(a){
+        //     return setTimeout(()=>{
+        //         console.log(a)
+        //     },2000)
+        // }
+        // let ans=gt(5);
+        // console.log(ans);
+      
+
+
+
+     
+        
+        
+    //  function getfood(data,data2){
+    //     setTimeout(()=>{
+    //         console.log("dish=",data)
+    //         if(data2){
+    //             data2();
+    //         }
+    //     },2000)
+    //  }
+    //  getfood("pizza",()=>{
+    //     getfood("burger",()=>{
+    //         getfood("patty")
+
+    //     })
+    //  });
+
+    // function getfood(data,next){
+    //     setTimeout(()=>{
+    //         console.log("dish",data)
+    //         next();
+    //     },2000);
+    // }
+    // getfood("pizza",()=>{
+    //     console.log("geting data2...........")
+    //     getfood("buger",()=>{
+    //         console.log("geting data3...........")
+
+    //         getfood("patty")
+    //     })
+
+
+    // });
+// call backs hell end==============''       
+       
+
+
+
+
+
+
+
+
+    </script>
+
 </body>
+
 </html>

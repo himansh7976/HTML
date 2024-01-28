@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // <!-- promises -->
+        // proise are objet in java script'
+        // three state pending and resolve and reject'
+
+        // resolve and reject are hanndler create automatice
+
+    //    let p=new Promise((resolve,reject)=>{
+    //     console.log("im prose");
+
+    //     // we can reject a any Promise and aslo resolve'
+    //     reject("soeyryry")
+    //    })
+    //    console.log(p);
+    function ne(){
+      return  new Promise((reslove,reject)=>{
+            console.log("helloji");
+            // reslove("secc");
+            reject("eoerr")
+
+        });
+    }
+    let ans=ne();
+    ans.catch((err)=>{
+        console.log("promise fukl",err);
+    })
+    
+
+
+
+
+    // we can create a promises using function'
+//    let getpromise=()=>{
+//    return new Promise((resolve,reject)=>{
+//         console.log("im prose");
+//         reject("ok");
+
+//    })
+// // }
+// let promise=getpromise();
+// promise.catch(()=>{
+//     console.log("fulfuld");
+// });
+
+// function getdata(data,next){
+//     return new Promise((reslove,reject)=>{
+//         console.log(data)
+
+//     })
+// }
+// getdata()
+// let po=new Promise((reslove,reject)=>{
+
+//     console.log("hello");
+//     reject("errr found");
+
+
+
+// })
+// console.log(po)
+
+// function get(a,getdata){
+//     return new Promise((reslove,reject)=>{
+
+//         setTimeout(() => {
+//             console.log(a)
+//             reslove("succe");
+//             if(getdata){
+//                 getdata();
+//             }
+            
+//         }, 9000);
+
+//     })
+    
+// }
+
+// let result=get(123);
+// console.log(result)
+
+// function data(a){
+//     return new Promise((reslove,reject)=>{
+//         console.log(a);
+//         reject("erorr")
+
+//     })
+// }
+// let ans=data("helloo");
+// console.log();
+
+
+
+
+
+
+
+
+
+// let p=new Promise((resolve,reject)=>{
+//     console.log("imabvofil");
+//    reject("erroe")
+
+
+
+// })
+
+// console.log(p);
+
+
+
+
+      
+
+    </script>
+
+   
+    
+</body>
+</html>
