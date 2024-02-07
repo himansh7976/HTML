@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // <!-- promises -->
@@ -13,115 +15,202 @@
 
         // resolve and reject are hanndler create automatice
 
-    //    let p=new Promise((resolve,reject)=>{
-    //     console.log("im prose");
+        //    function get(a){
+        //     let b=new Promise((resolve, reject) => {
+        //        setTimeout(()=>{
 
-    //     // we can reject a any Promise and aslo resolve'
-    //     reject("soeyryry")
-    //    })
-    //    console.log(p);
-    function ne(){
-      return  new Promise((reslove,reject)=>{
-            console.log("helloji");
-            // reslove("secc");
-            reject("eoerr")
+        //         resolve(a);
+        //        },9000)
+        //     })
+        //     return b;
+        //    }
 
-        });
-    }
-    let ans=ne();
-    ans.catch((err)=>{
-        console.log("promise fukl",err);
-    })
-    
+        //    get(10).then((r)=>{
+        //     console.log(r);
+        //    });
+        //    get("hello").catch((r)=>{
+        //     console.log(r)
+        //    });
+        //    let p=new Promise((resolve,reject)=>{
+        //     console.log("im prose");
 
+        //     // we can reject a any Promise and aslo resolve'
+        //     reject("soeyryry")
+        //    })
+        //    console.log(p);
+        // function ne(){
+        //   return  new Promise((reslove,reject)=>{
+        //         console.log("helloji");
+        //         // reslove("secc");
+        //         reject("eoerr")
 
-
-
-    // we can create a promises using function'
-//    let getpromise=()=>{
-//    return new Promise((resolve,reject)=>{
-//         console.log("im prose");
-//         reject("ok");
-
-//    })
-// // }
-// let promise=getpromise();
-// promise.catch(()=>{
-//     console.log("fulfuld");
-// });
-
-// function getdata(data,next){
-//     return new Promise((reslove,reject)=>{
-//         console.log(data)
-
-//     })
-// }
-// getdata()
-// let po=new Promise((reslove,reject)=>{
-
-//     console.log("hello");
-//     reject("errr found");
-
-
-
-// })
-// console.log(po)
-
-// function get(a,getdata){
-//     return new Promise((reslove,reject)=>{
-
-//         setTimeout(() => {
-//             console.log(a)
-//             reslove("succe");
-//             if(getdata){
-//                 getdata();
-//             }
-            
-//         }, 9000);
-
-//     })
-    
-// }
-
-// let result=get(123);
-// console.log(result)
-
-// function data(a){
-//     return new Promise((reslove,reject)=>{
-//         console.log(a);
-//         reject("erorr")
-
-//     })
-// }
-// let ans=data("helloo");
-// console.log();
+        //     });
+        // }
+        // let ans=ne();
+        // ans.catch((err)=>{
+        //     console.log("promise fukl",err);
+        // })
 
 
 
 
 
+        // we can create a promises using function'
+        //    let getpromise=()=>{
+        //    return new Promise((resolve,reject)=>{
+        //         console.log("im prose");
+        //         reject("ok");
+
+        //    })
+        // // }
+        // let promise=getpromise();
+        // promise.catch(()=>{
+        //     console.log("fulfuld");
+        // });
+
+        // function getdata(data,next){
+        //     return new Promise((reslove,reject)=>{
+        //         console.log(data)
+
+        //     })
+        // }
+        // getdata()
+        // let po=new Promise((reslove,reject)=>{
+
+        //     console.log("hello");
+        //     reject("errr found");
+
+
+
+        // })
+        // console.log(po)
+
+        // function get(a,getdata){
+        //     return new Promise((reslove,reject)=>{
+
+        //         setTimeout(() => {
+        //             console.log(a)
+        //             reslove("succe");
+        //             if(getdata){
+        //                 getdata();
+        //             }
+
+        //         }, 9000);
+
+        //     })
+
+        // }
+
+        // let result=get(123);
+        // console.log(result)
+
+        // function data(a){
+        //     return new Promise((reslove,reject)=>{
+        //         console.log(a);
+        //         reject("erorr")
+
+        //     })
+        // }
+        // let ans=data("helloo");
+        // console.log();
 
 
 
 
-// let p=new Promise((resolve,reject)=>{
-//     console.log("imabvofil");
-//    reject("erroe")
-
-
-
-// })
-
-// console.log(p);
 
 
 
 
-      
+
+        // let p=new Promise((resolve,reject)=>{
+        //     console.log("imabvofil");
+        //    reject("erroe")
+
+
+
+        // })
+
+        // console.log(p);\\
+
+        // promise chaining
+
+        // so we have a two function for print data
+
+        // 1.we create a first function and then create a second function
+
+        // and we can handle a both function in one time'
+
+        // function aycn(){
+        //     return new Promise((reslove,reject)=>{
+        //         setTimeout(()=>{
+        //             console.log("hello")
+        //             reslove("seccu");
+        //         },4000);
+
+
+        //     });
+        // }
+
+        // function aycn2(){
+        //     return new Promise((reslove,reject)=>{
+        //         setTimeout(()=>{
+        //             console.log("lello")
+        //             reslove("hogya");
+        //         },4000);
+
+
+        //     });
+        // }
+
+        // // chaining and we handle both data in one'
+        // aycn().then((res)=>{
+        //     console.log(res);
+        //     aycn2().then((res)=>{
+        //         console.log(res);
+        //     })
+
+        // })   
+
+        // function get() { 
+        //     return new Promise((reslove, reject) => {
+        //         setTimeout(() => {
+        //             console.log("yoyo");
+        //             reslove("ok");
+
+        //         }, 4000)
+
+        //     });
+
+        // }
+
+        // function get2() {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log("moye moye");
+        //         }, 4000)
+        //     });
+        // };
+        // get().then((r) => {
+        //     console.log(r);
+        //     get2().then((e) => {
+        //         console.log(e);
+        //     })
+        // });
+
+
+
+
+
+
+
+
+
+
 
     </script>
 
-   
-    
+
+
 </body>
+
 </html>
